@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="soundtouch"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cantina\;CMake Files\cantina\pantoufle\;CMake Files\cantina\pantoufle\cantina_common\;CMake Files\cantina\pantoufle\cantina_common\third-party\;CMake Files\cantina\pantoufle\cantina_common\third-party\fmt\;CMake Files\cantina\pantoufle\cantina_common\third-party\fmt\support\;CMake Files\cantina\pantoufle\cantina_common\third-party\fmt\support\cmake\;CMake Files\cantina\third-party\;CMake Files\cantina\third-party\fftw-3.3.8\;CMake Files\cantina\third-party\soundtouch\;CMake Files\cantina\lib\;CMake Files\cantina\lib\helmholtz\;CMake Files\third-party\;CMake Files\third-party\pd.build\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/third-party/soundtouch"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/third-party/soundtouch/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/third-party/soundtouch/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/third-party/soundtouch/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/third-party/soundtouch/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="soundtouch">
+				<Option output="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/third-party/soundtouch/libsoundtouch.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/third-party/soundtouch"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSOUNDTOUCH_PREVENT_CLICK_AT_RATE_CROSSOVER"/>
+					<Add directory="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/include"/>
+					<Add directory="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/source/SoundTouch"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/third-party/soundtouch/Makefile&quot;  VERBOSE=1 soundtouch"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/third-party/soundtouch/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/third-party/soundtouch/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/third-party/soundtouch/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="soundtouch/fast">
+				<Option output="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/third-party/soundtouch/libsoundtouch.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/third-party/soundtouch"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSOUNDTOUCH_PREVENT_CLICK_AT_RATE_CROSSOVER"/>
+					<Add directory="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/include"/>
+					<Add directory="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/source/SoundTouch"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/third-party/soundtouch/Makefile&quot;  VERBOSE=1 soundtouch/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/third-party/soundtouch/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/third-party/soundtouch/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/third-party/soundtouch/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/include/BPMDetect.h">
+			<Option target="soundtouch"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/include/FIFOSampleBuffer.h">
+			<Option target="soundtouch"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/include/FIFOSamplePipe.h">
+			<Option target="soundtouch"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/include/STTypes.h">
+			<Option target="soundtouch"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/include/SoundTouch.h">
+			<Option target="soundtouch"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/include/soundtouch_config.h">
+			<Option target="soundtouch"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/source/SoundTouch/AAFilter.cpp">
+			<Option target="soundtouch"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/source/SoundTouch/AAFilter.h">
+			<Option target="soundtouch"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/source/SoundTouch/BPMDetect.cpp">
+			<Option target="soundtouch"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/source/SoundTouch/FIFOSampleBuffer.cpp">
+			<Option target="soundtouch"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/source/SoundTouch/FIRFilter.cpp">
+			<Option target="soundtouch"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/source/SoundTouch/FIRFilter.h">
+			<Option target="soundtouch"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/source/SoundTouch/InterpolateCubic.cpp">
+			<Option target="soundtouch"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/source/SoundTouch/InterpolateCubic.h">
+			<Option target="soundtouch"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/source/SoundTouch/InterpolateLinear.cpp">
+			<Option target="soundtouch"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/source/SoundTouch/InterpolateLinear.h">
+			<Option target="soundtouch"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/source/SoundTouch/InterpolateShannon.cpp">
+			<Option target="soundtouch"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/source/SoundTouch/InterpolateShannon.h">
+			<Option target="soundtouch"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/source/SoundTouch/PeakFinder.cpp">
+			<Option target="soundtouch"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/source/SoundTouch/PeakFinder.h">
+			<Option target="soundtouch"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/source/SoundTouch/RateTransposer.cpp">
+			<Option target="soundtouch"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/source/SoundTouch/RateTransposer.h">
+			<Option target="soundtouch"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/source/SoundTouch/SoundTouch.cpp">
+			<Option target="soundtouch"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/source/SoundTouch/TDStretch.cpp">
+			<Option target="soundtouch"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/source/SoundTouch/TDStretch.h">
+			<Option target="soundtouch"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/source/SoundTouch/cpu_detect.h">
+			<Option target="soundtouch"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/source/SoundTouch/cpu_detect_x86.cpp">
+			<Option target="soundtouch"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/source/SoundTouch/mmx_optimized.cpp">
+			<Option target="soundtouch"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/source/SoundTouch/sse_optimized.cpp">
+			<Option target="soundtouch"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cantina\"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cantina\pantoufle\"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cantina\pantoufle\cantina_common\"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/third-party/fmt/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cantina\pantoufle\cantina_common\third-party\fmt\"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/third-party/fmt/support/cmake/JoinPaths.cmake">
+			<Option virtualFolder="CMake Files\cantina\pantoufle\cantina_common\third-party\fmt\support\cmake\"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/third-party/fmt/support/cmake/cxx14.cmake">
+			<Option virtualFolder="CMake Files\cantina\pantoufle\cantina_common\third-party\fmt\support\cmake\"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/fftw-3.3.8/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cantina\third-party\fftw-3.3.8\"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/fftw-3.3.8/FFTW3Config.cmake.in">
+			<Option virtualFolder="CMake Files\cantina\third-party\fftw-3.3.8\"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/fftw-3.3.8/FFTW3ConfigVersion.cmake.in">
+			<Option virtualFolder="CMake Files\cantina\third-party\fftw-3.3.8\"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/fftw-3.3.8/cmake.config.h.in">
+			<Option virtualFolder="CMake Files\cantina\third-party\fftw-3.3.8\"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/fftw-3.3.8/fftw.pc.in">
+			<Option virtualFolder="CMake Files\cantina\third-party\fftw-3.3.8\"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cantina\third-party\soundtouch\"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/lib/helmholtz/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cantina\lib\helmholtz\"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/third-party/pd.build/pd.cmake">
+			<Option virtualFolder="CMake Files\third-party\pd.build\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

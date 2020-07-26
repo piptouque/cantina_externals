@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="pantoufle"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cantina\;CMake Files\cantina\pantoufle\;CMake Files\cantina\pantoufle\cantina_common\;CMake Files\cantina\pantoufle\cantina_common\third-party\;CMake Files\cantina\pantoufle\cantina_common\third-party\fmt\;CMake Files\cantina\pantoufle\cantina_common\third-party\fmt\support\;CMake Files\cantina\pantoufle\cantina_common\third-party\fmt\support\cmake\;CMake Files\cantina\third-party\;CMake Files\cantina\third-party\fftw-3.3.8\;CMake Files\cantina\third-party\soundtouch\;CMake Files\cantina\lib\;CMake Files\cantina\lib\helmholtz\;CMake Files\third-party\;CMake Files\third-party\pd.build\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pantoufle">
+				<Option output="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/libpantoufle.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFMT_SHARED"/>
+					<Add directory="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include"/>
+					<Add directory="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/include"/>
+					<Add directory="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/third-party/fmt/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/Makefile&quot;  VERBOSE=1 pantoufle"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pantoufle/fast">
+				<Option output="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/libpantoufle.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFMT_SHARED"/>
+					<Add directory="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include"/>
+					<Add directory="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/include"/>
+					<Add directory="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/third-party/fmt/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/Makefile&quot;  VERBOSE=1 pantoufle/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cantina_common">
+				<Option output="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/cantina_common/libcantina_common.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/cantina_common"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFMT_SHARED"/>
+					<Add directory="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/include"/>
+					<Add directory="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/third-party/fmt/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/cantina_common/Makefile&quot;  VERBOSE=1 cantina_common"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/cantina_common/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/cantina_common/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/cantina_common/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cantina_common/fast">
+				<Option output="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/cantina_common/libcantina_common.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/cantina_common"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFMT_SHARED"/>
+					<Add directory="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/include"/>
+					<Add directory="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/third-party/fmt/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/cantina_common/Makefile&quot;  VERBOSE=1 cantina_common/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/cantina_common/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/cantina_common/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/cantina_common/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fmt">
+				<Option output="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/cantina_common/third-party/fmt/libfmtd.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/cantina_common/third-party/fmt"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFMT_EXPORT"/>
+					<Add directory="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/third-party/fmt/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/cantina_common/third-party/fmt/Makefile&quot;  VERBOSE=1 fmt"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/cantina_common/third-party/fmt/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/cantina_common/third-party/fmt/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/cantina_common/third-party/fmt/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fmt/fast">
+				<Option output="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/cantina_common/third-party/fmt/libfmtd.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/cantina_common/third-party/fmt"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFMT_EXPORT"/>
+					<Add directory="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/third-party/fmt/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/cantina_common/third-party/fmt/Makefile&quot;  VERBOSE=1 fmt/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/cantina_common/third-party/fmt/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/cantina_common/third-party/fmt/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/cantina_common/third-party/fmt/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/include/cant/common/CantinaException.hpp">
+			<Option target="cantina_common"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/include/cant/common/config.hpp">
+			<Option target="cantina_common"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/include/cant/common/impl.hpp">
+			<Option target="cantina_common"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/include/cant/common/info.hpp">
+			<Option target="cantina_common"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/include/cant/common/macro.hpp">
+			<Option target="cantina_common"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/include/cant/common/memory.hpp">
+			<Option target="cantina_common"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/include/cant/common/types.hpp">
+			<Option target="cantina_common"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/include/cant/pan/common/Cloneable.hpp">
+			<Option target="cantina_common"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/include/cant/pan/common/PantoufleException.hpp">
+			<Option target="cantina_common"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/include/cant/pan/common/Time.hpp">
+			<Option target="cantina_common"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/include/cant/pan/common/types.hpp">
+			<Option target="cantina_common"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/source/cant/pan/common/Time.cpp">
+			<Option target="cantina_common"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/third-party/fmt/ChangeLog.rst">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/third-party/fmt/README.rst">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/third-party/fmt/include/fmt/chrono.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/third-party/fmt/include/fmt/color.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/third-party/fmt/include/fmt/compile.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/third-party/fmt/include/fmt/core.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/third-party/fmt/include/fmt/format-inl.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/third-party/fmt/include/fmt/format.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/third-party/fmt/include/fmt/locale.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/third-party/fmt/include/fmt/os.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/third-party/fmt/include/fmt/ostream.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/third-party/fmt/include/fmt/posix.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/third-party/fmt/include/fmt/printf.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/third-party/fmt/include/fmt/ranges.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/third-party/fmt/src/format.cc">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/third-party/fmt/src/os.cc">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include/cant/pan/Pantoufle.hpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include/cant/pan/control/MidiControl.hpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include/cant/pan/control/MidiControlCompatible.hpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include/cant/pan/control/MidiControlData.hpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include/cant/pan/control/control.hpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include/cant/pan/controller/MidiController.hpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include/cant/pan/controller/MidiDamper.hpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include/cant/pan/controller/controller.hpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include/cant/pan/envelope/ADSREnvelope.hpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include/cant/pan/envelope/FlatEnvelope.hpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include/cant/pan/envelope/MidiEnvelope.hpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include/cant/pan/envelope/envelope.hpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include/cant/pan/note/ControlledMidiNote.hpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include/cant/pan/note/DampMidiNote.hpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include/cant/pan/note/DecoratedMidiNote.hpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include/cant/pan/note/EnvelopedMidiNote.hpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include/cant/pan/note/LazyMidiNote.hpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include/cant/pan/note/MidiNote.hpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include/cant/pan/note/MidiNoteCompatible.hpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include/cant/pan/note/MidiNoteData.hpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include/cant/pan/note/RawMidiNote.hpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include/cant/pan/note/note.hpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include/cant/pan/pan.hpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include/cant/pan/processor/MidiControllerChain.hpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include/cant/pan/processor/MidiEnvelopeLayer.hpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include/cant/pan/processor/MidiProcessor.hpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include/cant/pan/processor/processor.hpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/include/cant/pan/stream/MidiStream.hpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/source/cant/pan/Pantoufle.cpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/source/cant/pan/control/MidiControl.cpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/source/cant/pan/controller/MidiController.cpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/source/cant/pan/controller/MidiDamper.cpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/source/cant/pan/envelope/ADSREnvelope.cpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/source/cant/pan/envelope/FlatEnvelope.cpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/source/cant/pan/envelope/MidiEnvelope.cpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/source/cant/pan/note/ControlledMidiNote.cpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/source/cant/pan/note/DampMidiNote.cpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/source/cant/pan/note/DecoratedMidiNote.cpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/source/cant/pan/note/EnvelopedMidiNote.cpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/source/cant/pan/note/LazyMidiNote.cpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/source/cant/pan/note/MidiNote.cpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/source/cant/pan/note/MidiNoteData.cpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/source/cant/pan/note/RawMidiNote.cpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/source/cant/pan/processor/MidiControllerChain.cpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/source/cant/pan/processor/MidiEnvelopeLayer.cpp">
+			<Option target="pantoufle"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cantina\"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cantina\pantoufle\"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cantina\pantoufle\cantina_common\"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/third-party/fmt/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cantina\pantoufle\cantina_common\third-party\fmt\"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/third-party/fmt/support/cmake/JoinPaths.cmake">
+			<Option virtualFolder="CMake Files\cantina\pantoufle\cantina_common\third-party\fmt\support\cmake\"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common/third-party/fmt/support/cmake/cxx14.cmake">
+			<Option virtualFolder="CMake Files\cantina\pantoufle\cantina_common\third-party\fmt\support\cmake\"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/fftw-3.3.8/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cantina\third-party\fftw-3.3.8\"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/fftw-3.3.8/FFTW3Config.cmake.in">
+			<Option virtualFolder="CMake Files\cantina\third-party\fftw-3.3.8\"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/fftw-3.3.8/FFTW3ConfigVersion.cmake.in">
+			<Option virtualFolder="CMake Files\cantina\third-party\fftw-3.3.8\"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/fftw-3.3.8/cmake.config.h.in">
+			<Option virtualFolder="CMake Files\cantina\third-party\fftw-3.3.8\"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/fftw-3.3.8/fftw.pc.in">
+			<Option virtualFolder="CMake Files\cantina\third-party\fftw-3.3.8\"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/third-party/soundtouch/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cantina\third-party\soundtouch\"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/lib/helmholtz/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cantina\lib\helmholtz\"/>
+		</Unit>
+		<Unit filename="/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/third-party/pd.build/pd.cmake">
+			<Option virtualFolder="CMake Files\third-party\pd.build\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

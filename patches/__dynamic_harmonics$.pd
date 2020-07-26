@@ -1,0 +1,18 @@
+#N canvas 206 443 643 637 10;
+#X obj 38 23 inlet~;
+#X obj 87 28 inlet;
+#X obj 199 28 inlet;
+#X obj 247 33 inlet;
+#X obj 310 42 inlet;
+#X obj 376 48 inlet;
+#X obj 140 41 inlet;
+#X obj 48 181 send~ \$3-__harmonic_\$1;
+#X obj 55 136 dynamic_harmonic~ \$1 \$2 \$3;
+#X connect 0 0 8 0;
+#X connect 1 0 8 1;
+#X connect 2 0 8 3;
+#X connect 3 0 8 4;
+#X connect 4 0 8 5;
+#X connect 5 0 8 6;
+#X connect 6 0 8 2;
+#X connect 8 0 7 0;

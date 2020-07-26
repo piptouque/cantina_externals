@@ -1,0 +1,21 @@
+/snap/clion/121/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde
+CMAKE_VERSION          : 3.16.5
+CMAKE_SYSTEM_NAME      : Linux
+CMAKE_SYSTEM           : Linux-5.4.0-40-generic
+CMAKE_SYSTEM_PROCESSOR : x86_64
+CMAKE_BINARY_DIR       : /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build
+CMAKE_SOURCE_DIR       : /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde
+CMAKE_HOME_DIRECTORY   : /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde
+PROJECT_BINARY_DIR     : /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build
+PROJECT_SOURCE_DIR     : /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde
+PROJECT_LIB_DIR        : 
+GIT_SUBMODULE_DIR:    : 
+-- /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/cantina/pantoufle/cantina_common
+-- Version: 7.0.1
+-- Build type: Debug
+-- CXX_STANDARD: 20
+-- Required features: cxx_variadic_templates
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build
+Cannot read CMake dependency information from /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/Makefile.cmake

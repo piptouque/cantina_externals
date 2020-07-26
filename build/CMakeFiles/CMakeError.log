@@ -1,0 +1,194 @@
+Determining if the include file altivec.h exists failed with the following output:
+Change Dir: /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8201d/fast && /usr/bin/make -f CMakeFiles/cmTC_8201d.dir/build.make CMakeFiles/cmTC_8201d.dir/build
+make[1] : on entre dans le répertoire « /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_8201d.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_8201d.dir/CheckIncludeFile.c.o   -c /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: altivec.h: Aucun fichier ou dossier de ce type
+    1 | #include <altivec.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_8201d.dir/build.make:66: CMakeFiles/cmTC_8201d.dir/CheckIncludeFile.c.o] Error 1
+make[1] : on quitte le répertoire « /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp »
+make: *** [Makefile:121: cmTC_8201d/fast] Error 2
+
+
+
+Determining if the include file c_asm.h exists failed with the following output:
+Change Dir: /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bf6d6/fast && /usr/bin/make -f CMakeFiles/cmTC_bf6d6.dir/build.make CMakeFiles/cmTC_bf6d6.dir/build
+make[1] : on entre dans le répertoire « /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_bf6d6.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_bf6d6.dir/CheckIncludeFile.c.o   -c /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: c_asm.h: Aucun fichier ou dossier de ce type
+    1 | #include <c_asm.h>
+      |          ^~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_bf6d6.dir/build.make:66: CMakeFiles/cmTC_bf6d6.dir/CheckIncludeFile.c.o] Error 1
+make[1] : on quitte le répertoire « /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp »
+make: *** [Makefile:121: cmTC_bf6d6/fast] Error 2
+
+
+
+Determining if the include file intrinsics.h exists failed with the following output:
+Change Dir: /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3fb02/fast && /usr/bin/make -f CMakeFiles/cmTC_3fb02.dir/build.make CMakeFiles/cmTC_3fb02.dir/build
+make[1] : on entre dans le répertoire « /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_3fb02.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_3fb02.dir/CheckIncludeFile.c.o   -c /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: intrinsics.h: Aucun fichier ou dossier de ce type
+    1 | #include <intrinsics.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_3fb02.dir/build.make:66: CMakeFiles/cmTC_3fb02.dir/CheckIncludeFile.c.o] Error 1
+make[1] : on quitte le répertoire « /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp »
+make: *** [Makefile:121: cmTC_3fb02/fast] Error 2
+
+
+
+Determining if the include file mach/mach_time.h exists failed with the following output:
+Change Dir: /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f2aa3/fast && /usr/bin/make -f CMakeFiles/cmTC_f2aa3.dir/build.make CMakeFiles/cmTC_f2aa3.dir/build
+make[1] : on entre dans le répertoire « /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_f2aa3.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_f2aa3.dir/CheckIncludeFile.c.o   -c /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: mach/mach_time.h: Aucun fichier ou dossier de ce type
+    1 | #include <mach/mach_time.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_f2aa3.dir/build.make:66: CMakeFiles/cmTC_f2aa3.dir/CheckIncludeFile.c.o] Error 1
+make[1] : on quitte le répertoire « /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp »
+make: *** [Makefile:121: cmTC_f2aa3/fast] Error 2
+
+
+
+Determining if the include file uintptr.h exists failed with the following output:
+Change Dir: /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7b2de/fast && /usr/bin/make -f CMakeFiles/cmTC_7b2de.dir/build.make CMakeFiles/cmTC_7b2de.dir/build
+make[1] : on entre dans le répertoire « /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_7b2de.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_7b2de.dir/CheckIncludeFile.c.o   -c /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: uintptr.h: Aucun fichier ou dossier de ce type
+    1 | #include <uintptr.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_7b2de.dir/build.make:66: CMakeFiles/cmTC_7b2de.dir/CheckIncludeFile.c.o] Error 1
+make[1] : on quitte le répertoire « /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp »
+make: *** [Makefile:121: cmTC_7b2de/fast] Error 2
+
+
+
+Determining if the mach_absolute_time exist failed with the following output:
+Change Dir: /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4ec79/fast && /usr/bin/make -f CMakeFiles/cmTC_4ec79.dir/build.make CMakeFiles/cmTC_4ec79.dir/build
+make[1] : on entre dans le répertoire « /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_4ec79.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_4ec79.dir/CheckSymbolExists.c.o   -c /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: mach/mach_time.h: Aucun fichier ou dossier de ce type
+    2 | #include <mach/mach_time.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_4ec79.dir/build.make:66: CMakeFiles/cmTC_4ec79.dir/CheckSymbolExists.c.o] Error 1
+make[1] : on quitte le répertoire « /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp »
+make: *** [Makefile:121: cmTC_4ec79/fast] Error 2
+
+
+File /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <mach/mach_time.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef mach_absolute_time
+  return ((int*)(&mach_absolute_time))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the sysctl exist failed with the following output:
+Change Dir: /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_44637/fast && /usr/bin/make -f CMakeFiles/cmTC_44637.dir/build.make CMakeFiles/cmTC_44637.dir/build
+make[1] : on entre dans le répertoire « /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_44637.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_44637.dir/CheckSymbolExists.c.o   -c /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘sysctl’ undeclared (first use in this function); did you mean ‘syscall’?
+    8 |   return ((int*)(&sysctl))[argc];
+      |                   ^~~~~~
+      |                   syscall
+/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_44637.dir/build.make:66: CMakeFiles/cmTC_44637.dir/CheckSymbolExists.c.o] Error 1
+make[1] : on quitte le répertoire « /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp »
+make: *** [Makefile:121: cmTC_44637/fast] Error 2
+
+
+File /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sysctl
+  return ((int*)(&sysctl))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C++ SOURCE FILE Test has_std_20_flag failed with the following output:
+Change Dir: /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4c60e/fast && /usr/bin/make -f CMakeFiles/cmTC_4c60e.dir/build.make CMakeFiles/cmTC_4c60e.dir/build
+make[1]: Entering directory '/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4c60e.dir/src.cxx.o
+/usr/bin/c++    -Wall -Werror -fPIC -Dhas_std_20_flag   -std=c++20 -std=gnu++2a -o CMakeFiles/cmTC_4c60e.dir/src.cxx.o -c /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-std=c++20'; did you mean '-std=c++2a'?
+make[1]: *** [CMakeFiles/cmTC_4c60e.dir/build.make:66: CMakeFiles/cmTC_4c60e.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_4c60e/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Determining if the strtod_l exist failed with the following output:
+Change Dir: /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1c6f6/fast && /usr/bin/make -f CMakeFiles/cmTC_1c6f6.dir/build.make CMakeFiles/cmTC_1c6f6.dir/build
+make[1] : on entre dans le répertoire « /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_1c6f6.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_1c6f6.dir/CheckSymbolExists.c.o   -c /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘strtod_l’ undeclared (first use in this function); did you mean ‘strtoull’?
+    8 |   return ((int*)(&strtod_l))[argc];
+      |                   ^~~~~~~~
+      |                   strtoull
+/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_1c6f6.dir/build.make:66: CMakeFiles/cmTC_1c6f6.dir/CheckSymbolExists.c.o] Error 1
+make[1] : on quitte le répertoire « /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp »
+make: *** [Makefile:121: cmTC_1c6f6/fast] Error 2
+
+
+File /home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtod_l
+  return ((int*)(&strtod_l))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}

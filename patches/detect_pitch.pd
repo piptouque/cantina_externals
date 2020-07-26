@@ -1,0 +1,14 @@
+#N canvas 664 520 450 300 10;
+#X obj 101 66 inlet~;
+#X obj 152 125 ftom;
+#X obj 150 159 pack f f;
+#X obj 192 124 t b f;
+#X obj 142 193 outlet;
+#X obj 103 92 helmhotz/helmholtz~ 1024 1;
+#X connect 0 0 5 0;
+#X connect 1 0 2 0;
+#X connect 2 0 4 0;
+#X connect 3 0 2 0;
+#X connect 3 1 2 1;
+#X connect 5 1 1 0;
+#X connect 5 2 3 0;
