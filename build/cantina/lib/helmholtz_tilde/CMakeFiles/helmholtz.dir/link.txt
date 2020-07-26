@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -fPIC -g  -shared -Wl,-soname,libhelmholtz.so -o libhelmholtz.so CMakeFiles/helmholtz.dir/source/Helmholtz.cpp.o 

@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -Wall -Werror -fPIC -g  -shared -Wl,-soname,libcantina_common.so -o libcantina_common.so CMakeFiles/cantina_common.dir/source/cant/pan/common/Time.cpp.o  -Wl,-rpath,/home/binabik/Documents/projets_gite/cantina_fam/cantina_tilde/build/cantina/pantoufle/cantina_common/third-party/fmt third-party/fmt/libfmtd.so.7.0.1 -Wl,--as-needed 

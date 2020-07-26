@@ -1,0 +1,9 @@
+
+# output folder
+output
+# bin
+bin
+build
+
+# IDE rubbish
+.idea

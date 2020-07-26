@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -Wall -Werror -fPIC -g  -shared -Wl,-soname,libfmtd.so.7 -o libfmtd.so.7.0.1 CMakeFiles/fmt.dir/src/format.cc.o CMakeFiles/fmt.dir/src/os.cc.o  -Wl,--as-needed 
