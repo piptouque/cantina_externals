@@ -39,7 +39,7 @@ damper pedal is pressed.;
 #X obj 123 124 == 127;
 #X obj 107 148 change;
 #X obj 470 15 inlet;
-#X text 537 26 inlets (left to right) \; 1) midi tone of the last played
+#X text 537 26 inlets (left to right) \; 1) pan tone of the last played
 note \, velocity \; 2) controller data \; 3) tone of the played audio
 input \; 4) input~ acceptable \;;
 #X obj 307 566 &&;

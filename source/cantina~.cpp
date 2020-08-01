@@ -179,9 +179,9 @@ void cantina_tilde_notes(t_cantina_tilde *x, t_symbol *s, int argc, t_atom *argv
     }
     /* voices of the poly object start at 1 */
     const auto iVoice = (cant::sizeint)atom_getfloat(argv) - 1;
-    const auto tone = (cant::midi::tone_mint)atom_getfloat(argv + 1);
-    const auto velocity = (cant::midi::vel_mint)atom_getfloat(argv + 2);
-    const auto data = cant::midi::MidiNoteInputData(tone, velocity, 1);
+    const auto tone = (cant::pan::tone_mint)atom_getfloat(argv + 1);
+    const auto velocity = (cant::pan::vel_mint)atom_getfloat(argv + 2);
+    const auto data = cant::pan::MidiNoteInputData(tone, velocity, 1);
     try
     {
         x->cant->receiveNote(iVoice, data);
@@ -199,9 +199,9 @@ void cantina_tilde_controls(t_cantina_tilde *x, t_symbol *s, int argc, t_atom *a
         post("Mais non c'est pas ça !!");
         return;
     }
-    const auto controllerId = (cant::midi::byte_m) atom_getfloat(argv);
-    const auto value = (cant::midi::byte_m) atom_getfloat(argv + 1);
-    const auto data = cant::midi::MidiControlInputData(controllerId, value);
+    const auto controllerId = (cant::pan::byte_m) atom_getfloat(argv);
+    const auto value = (cant::pan::byte_m) atom_getfloat(argv + 1);
+    const auto data = cant::pan::MidiControlInputData(controllerId, value);
     try
     {
         x->cant->receiveControl(data);
@@ -222,8 +222,8 @@ void cantina_tilde_controllers(t_cantina_tilde *x, t_symbol *s, int argc, t_atom
     char buf[20];
     atom_string(argv, buf, 20);
     const auto type = std::string(buf);
-    const auto channelId  = (cant::midi::byte_m) atom_getfloat(argv + 1);
-    const auto controllerId = (cant::midi::byte_m) atom_getfloat(argv + 2);
+    const auto channelId  = (cant::pan::byte_m) atom_getfloat(argv + 1);
+    const auto controllerId = (cant::pan::byte_m) atom_getfloat(argv + 2);
     try
     {
         x->cant->setController(type, channelId, controllerId);
