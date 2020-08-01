@@ -81,7 +81,7 @@
 #X obj 627 58 / 127;
 #X obj 615 12 route 14;
 #X obj 261 10 t l l;
-#X msg 69 72 controller damper 1 15;
+#X msg 95 86 controller damper 1 15;
 #X connect 0 0 55 0;
 #X connect 0 0 59 0;
 #X connect 1 0 0 0;
