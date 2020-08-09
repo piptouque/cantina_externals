@@ -22,8 +22,12 @@ typedef struct
     t_inlet *x_in_notes;
     t_inlet *x_in_controls;
     /* outlets */
+    /** signals **/
     t_outlet *x_out_seed;
     t_outlet **x_out_harmonics;
+    /** midi-related stuff **/
+    t_outlet *x_out_notes;
+    t_outlet *x_out_controls;
     /* values */
     /* intern */
     std::unique_ptr<cant::Cantina> cant;
@@ -66,7 +70,12 @@ void* cantina_tilde_new(const t_symbol *s, const int argc, t_atom *argv)
             gensym("controls")
             );
     /* outlets */
+    /** signals **/
     x->x_out_seed = outlet_new(&x->x_obj, &s_signal);
+    /** midi (here because not dynamic) **/
+    x->x_out_notes = outlet_new(&x->x_obj, &s_list);
+    x->x_out_controls = outlet_new(&x->x_obj, &s_list);
+    /** signals again **/
     x->x_out_harmonics = (t_outlet**)getbytes(x->cant->getNumberHarmonics() * sizeof(t_outlet*));
     if(!x->x_out_harmonics)
     {
@@ -81,12 +90,21 @@ void* cantina_tilde_new(const t_symbol *s, const int argc, t_atom *argv)
 
 void cantina_tilde_free(t_cantina_tilde *x)
 {
+
+    /* inlets */
+    inlet_free(x->x_in_notes);
+    inlet_free(x->x_in_controls);
+    /* outlets */
+    /** signals **/
     outlet_free(x->x_out_seed);
     for(std::size_t i=0; i < x->cant->getNumberHarmonics(); ++i)
     {
         outlet_free(x->x_out_harmonics[i]);
     }
     freebytes(x->x_out_harmonics, x->cant->getNumberHarmonics() * sizeof(t_outlet*));
+    /** midi **/
+    outlet_free(x->x_out_notes);
+    outlet_free(x->x_out_controls);
     x->cant.reset();
 }
 
@@ -98,7 +116,7 @@ int get_vec_size(const t_cantina_tilde *x)
 t_int* cantina_tilde_perform(t_int *w)
 {
     auto *x = (t_cantina_tilde*)(w[1]);
-    int blockSize = (int)(w[2]);
+    size_t blockSize = (size_t)(w[2]);
     auto *in = (t_sample*)(w[3]);
     auto *out_seed = (t_sample*)(w[4]);
     auto **out_harmonics = (t_sample**)(&w[5]);
@@ -172,20 +190,19 @@ void cantina_tilde_envelope(t_symbol *s, int argc, t_atom *argv)
 
 void cantina_tilde_notes(t_cantina_tilde *x, t_symbol *s, int argc, t_atom *argv)
 {
-    if(argc < 3)
+    if(argc < 2)
     {
-        post("Poly note wrong format: expected voice, tone, and velocity.");
+        post("Wrong format for note input: expected tone and velocity.");
         return;
     }
     /* voices of the poly object start at 1 */
-    const auto iVoice = (cant::size_m)atom_getfloat(argv) - 1;
-    const auto tone = (cant::pan::tone_mint)atom_getfloat(argv + 1);
-    const auto velocity = (cant::pan::vel_mint)atom_getfloat(argv + 2);
+    const auto tone = (cant::pan::tone_mint)atom_getfloat(argv);
+    const auto velocity = (cant::pan::vel_mint)atom_getfloat(argv + 1);
     const cant::pan::byte_m channel = 1;
     const auto data = cant::pan::MidiNoteInputData(channel, tone, velocity);
     try
     {
-        x->cant->receiveNote(iVoice, data);
+        x->cant->receiveNote(data);
     }
     catch (const cant::CantinaException& e)
     {
@@ -218,7 +235,7 @@ void cantina_tilde_controllers(t_cantina_tilde *x, t_symbol *s, int argc, t_atom
 {
     if(argc < 3)
     {
-        post("Controller wrong format: expected type, channel, and controller id.");
+        post("Wrong format for controller definition: expected type, channel, and controller id.");
         return;
     }
     char buf[20];
@@ -228,7 +245,7 @@ void cantina_tilde_controllers(t_cantina_tilde *x, t_symbol *s, int argc, t_atom
     const auto controllerId = (cant::pan::byte_m) atom_getfloat(argv + 2);
     try
     {
-        x->cant->setController(type, channelId, controllerId);
+        x->cant->setController(type, channelId, { controllerId });
     }
     catch (const cant::CantinaException& e)
     {
