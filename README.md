@@ -5,15 +5,12 @@
 
 todo:
 
-* pantoufle
-
-----
+* eurêka
 
 #### Patches
 
 * Alive: live set-up
 * cantroller~: post-processed cantina~
-* cantina_patch~: cantina~ implementation with patches
 
-----
+###### ~ tut-tut-tut-tut-tulut-tut ~
 

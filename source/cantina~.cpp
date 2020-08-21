@@ -217,9 +217,21 @@ void cantina_tilde_controls(t_cantina_tilde *x, t_symbol *s, int argc, t_atom *a
         post("Mais non c'est pas ça !!");
         return;
     }
+    /*
+     * Alright, so in my former set-up pd is always one step behind when it comes to controls,
+     * -- I used to send resp. controllerId to left and value to right inlets of [pack]
+     * -- It's because of the [ctlin], I think the output bang from right to left,
+     * -- so when I switch the order, when inputting them to the [pack],
+     * -- The hot inlet bangs first and sends the oudated control.
+     * I found out when using the pedal, which goes from 0 to 127 and back again,
+     * and that would be more of problem than, say, which the 'potards'.
+     * So I'll just switch value first and controller id second, then.
+     * Awesome!
+     */
     const cant::pan::byte_m channel = 1;
-    const auto controllerId = (cant::pan::byte_m) atom_getfloat(argv);
-    const auto value = (cant::pan::byte_m) atom_getfloat(argv + 1);
+    // remember this one!
+    const auto value = (cant::pan::byte_m) atom_getfloat(argv);
+    const auto controllerId = (cant::pan::byte_m) atom_getfloat(argv + 1);
     const auto data = cant::pan::MidiControlInputData(channel, controllerId, value);
     try
     {
