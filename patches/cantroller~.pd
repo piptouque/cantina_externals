@@ -4,7 +4,7 @@
 #X msg 583 131 0.8;
 #X obj 695 33 loadbang;
 #X obj 639 220 vsl 80 160 0 1 0 0 empty empty harmonic 0 10 0 14 -4034
--1 -1 12720 1;
+-1 -1 8820 1;
 #X obj 61 531 +~;
 #X msg 741 138 0.3;
 #X msg 779 141 0.1;
@@ -55,8 +55,8 @@
 #X obj 115 20 inlet;
 #X obj 212 16 inlet;
 #X obj 47 291 *~;
-#X obj 38 374 chorus/basic_chorus;
-#X obj 206 457 reverb/freeverb~;
+#X obj 23 431 chorus/basic_chorus;
+#X obj 152 465 reverb/freeverb~;
 #X obj 306 271 *~;
 #X obj 374 274 *~;
 #X obj 407 272 *~;
@@ -82,10 +82,11 @@
 #X obj 615 12 route 14;
 #X obj 261 10 t l l;
 #X msg 95 86 controller damper 1 64;
+#X obj 33 391 reverb/freeverb~;
+#X msg 619 145 0.6;
 #X connect 0 0 55 0;
 #X connect 0 0 59 0;
 #X connect 1 0 0 0;
-#X connect 1 0 3 0;
 #X connect 2 0 1 0;
 #X connect 2 0 5 0;
 #X connect 2 0 6 0;
@@ -94,6 +95,7 @@
 #X connect 2 0 30 0;
 #X connect 2 0 31 0;
 #X connect 2 0 72 0;
+#X connect 2 0 74 0;
 #X connect 3 0 57 0;
 #X connect 3 0 56 0;
 #X connect 4 0 41 0;
@@ -102,10 +104,15 @@
 #X connect 7 0 23 0;
 #X connect 8 0 22 0;
 #X connect 9 0 48 0;
+#X connect 9 0 73 0;
 #X connect 10 0 48 0;
+#X connect 10 0 73 0;
 #X connect 11 0 48 0;
+#X connect 11 0 73 0;
 #X connect 12 0 48 0;
+#X connect 12 0 73 0;
 #X connect 13 0 48 0;
+#X connect 13 0 73 0;
 #X connect 14 0 63 0;
 #X connect 15 0 63 2;
 #X connect 16 0 63 3;
@@ -130,7 +137,7 @@
 #X connect 43 0 42 0;
 #X connect 44 0 68 1;
 #X connect 45 0 68 2;
-#X connect 46 0 47 0;
+#X connect 46 0 73 0;
 #X connect 47 0 4 0;
 #X connect 47 1 43 0;
 #X connect 48 0 4 1;
@@ -175,4 +182,6 @@
 #X connect 70 0 69 0;
 #X connect 71 1 70 0;
 #X connect 72 0 68 0;
+#X connect 73 0 47 0;
+#X connect 74 0 3 0;
 #X coords 0 -1 1 1 430 189 1 550 200;

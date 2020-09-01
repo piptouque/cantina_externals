@@ -303,7 +303,7 @@ extern "C" void cantina_tilde_setup(void)
                     A_GIMME,
                     0);
     CLASS_MAINSIGNALIN(cantina_tilde_class, t_cantina_tilde, f);
-    post("Cant version: %.2g", CANTINA_VERSION);
-    post("Cant brew:    %s", CANTINA_BREW);
+    post("Cant version: %.2g", cant::CANTINA_VERSION);
+    post("Cant brew:    %s", cant::CANTINA_BREW);
     post("~ tut-tut-tut-tut-tulut-tut ~");
 }
