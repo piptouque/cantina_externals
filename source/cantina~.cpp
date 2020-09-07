@@ -115,11 +115,11 @@ int get_vec_size(const t_cantina_tilde *x)
 
 t_int* cantina_tilde_perform(t_int *w)
 {
-    auto *x = (t_cantina_tilde*)(w[1]);
-    size_t blockSize = (size_t)(w[2]);
-    auto *in = (t_sample*)(w[3]);
-    auto *out_seed = (t_sample*)(w[4]);
-    auto **out_harmonics = (t_sample**)(&w[5]);
+    auto *x              = reinterpret_cast<t_cantina_tilde*>(w[1]);
+    auto blockSize       = static_cast<std::size_t>          (w[2]);
+    auto *in             = reinterpret_cast<t_sample*>       (w[3]);
+    auto *out_seed       = reinterpret_cast<t_sample*>       (w[4]);
+    auto **out_harmonics = reinterpret_cast<t_sample**>      (&w[5]);
     /* for now, no computation on the first outlet
      * -> seed bypass
      */
@@ -147,13 +147,13 @@ t_int* create_vec_dsp(int *size, t_cantina_tilde *x, t_signal **sp)
 {
     *size = get_vec_size(x);
     auto *vec = (t_int *)malloc((*size) * sizeof(t_int));
-    vec[0] = (t_int)x;
-    vec[1] = (t_int)sp[0]->s_n;
-    vec[2] = (t_int)sp[0]->s_vec;
-    vec[3] = (t_int)sp[1]->s_vec;
+    vec[0] = reinterpret_cast<t_int>(x);              // x
+    vec[1] = static_cast<t_int>(sp[0]->s_n);          // blockSize
+    vec[2] = reinterpret_cast<t_int>(sp[0]->s_vec);  // in
+    vec[3] = reinterpret_cast<t_int>(sp[1]->s_vec);
     for(std::size_t i=0; i< x->cant->getNumberHarmonics(); ++i)
     {
-        vec[4 + i] = (t_int)sp[2 + i]->s_vec;
+        vec[4 + i] = reinterpret_cast<t_int>(sp[2 + i]->s_vec);
     }
     return vec;
 }
@@ -196,9 +196,9 @@ void cantina_tilde_notes(t_cantina_tilde *x, t_symbol *s, int argc, t_atom *argv
         return;
     }
     /* voices of the poly object start at 1 */
-    const auto tone = (cant::pan::tone_mint)atom_getfloat(argv);
-    const auto velocity = (cant::pan::vel_mint)atom_getfloat(argv + 1);
-    const cant::pan::byte_m channel = 1;
+    const auto tone = static_cast<cant::pan::tone_u8>(atom_getfloat(argv));
+    const auto velocity = static_cast<cant::pan::vel_u8>(atom_getfloat(argv + 1));
+    const cant::pan::id_u8 channel = 1;
     const auto data = cant::pan::MidiNoteInputData(channel, tone, velocity);
     try
     {
@@ -228,10 +228,9 @@ void cantina_tilde_controls(t_cantina_tilde *x, t_symbol *s, int argc, t_atom *a
      * So I'll just switch value first and controller id second, then.
      * Awesome!
      */
-    const cant::pan::byte_m channel = 1;
-    // remember this one!
-    const auto value = (cant::pan::byte_m) atom_getfloat(argv);
-    const auto controllerId = (cant::pan::byte_m) atom_getfloat(argv + 1);
+    const cant::pan::id_u8 channel = 1;
+    const auto value = static_cast<cant::pan::id_u8>(atom_getfloat(argv));
+    const auto controllerId = static_cast<cant::pan::id_u8>(atom_getfloat(argv + 1));
     const auto data = cant::pan::MidiControlInputData(channel, controllerId, value);
     try
     {
@@ -253,8 +252,8 @@ void cantina_tilde_controllers(t_cantina_tilde *x, t_symbol *s, int argc, t_atom
     char buf[20];
     atom_string(argv, buf, 20);
     const auto type = std::string(buf);
-    const auto channelId  = (cant::pan::byte_m) atom_getfloat(argv + 1);
-    const auto controllerId = (cant::pan::byte_m) atom_getfloat(argv + 2);
+    const auto channelId  = static_cast<cant::pan::id_u8>(atom_getfloat(argv + 1));
+    const auto controllerId = static_cast<cant::pan::id_u8>(atom_getfloat(argv + 2));
     try
     {
         x->cant->setController(type, channelId, { controllerId });
