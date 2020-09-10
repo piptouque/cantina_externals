@@ -9,6 +9,6 @@
 
 extern "C" {
 #include <m_pd.h>
-};
+}
 
 #endif //CANTINA_IMPL_HPP

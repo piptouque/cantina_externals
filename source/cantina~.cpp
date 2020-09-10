@@ -30,13 +30,14 @@ typedef struct
     t_outlet *x_out_controls;
     /* values */
     /* intern */
-    std::unique_ptr<cant::Cantina> cant;
+    std::unique_ptr<cant::Cantina> cantina;
     std::vector<t_sample*> s_vec_harmonics;
+    std::vector<t_int> x_vec_dspargs;
 } t_cantina_tilde;
 
-void* cantina_tilde_new(const t_symbol *s, const int argc, t_atom *argv)
+void* cantina_tilde_new(const t_symbol *, const int argc, t_atom *argv)
 {
-    auto *x = (t_cantina_tilde*) pd_new(cantina_tilde_class);
+    auto *x = (t_cantina_tilde*)pd_new(cantina_tilde_class);
     /* number of harmonics */
     t_float n_arg = 0;
     if(argc)
@@ -46,7 +47,7 @@ void* cantina_tilde_new(const t_symbol *s, const int argc, t_atom *argv)
     const std::size_t numberHarmonics = std::max<std::size_t>(0, std::floor(n_arg));
     try
     {
-        x->cant = std::make_unique<cant::Cantina>(
+        x->cantina = std::make_unique<cant::Cantina>(
                 numberHarmonics,
                 sys_getsr() /* sample rate */
         );
@@ -76,16 +77,18 @@ void* cantina_tilde_new(const t_symbol *s, const int argc, t_atom *argv)
     x->x_out_notes = outlet_new(&x->x_obj, &s_list);
     x->x_out_controls = outlet_new(&x->x_obj, &s_list);
     /** signals again **/
-    x->x_out_harmonics = (t_outlet**)getbytes(x->cant->getNumberHarmonics() * sizeof(t_outlet*));
+    x->x_out_harmonics = (t_outlet**)getbytes(x->cantina->getNumberHarmonics() * sizeof(t_outlet*));
     if(!x->x_out_harmonics)
     {
         post("cantina~: failed to allocate outlets.");
     }
-    for(std::size_t i=0; i < x->cant->getNumberHarmonics(); ++i)
+    for(std::size_t i=0; i < x->cantina->getNumberHarmonics(); ++i)
     {
         x->x_out_harmonics[i] = outlet_new(&x->x_obj, &s_signal);
     }
-    return (void*)x;
+    /** dsp args vector **/
+    x->x_vec_dspargs = std::vector<t_int>(4 + x->cantina->getNumberHarmonics());
+    return static_cast<void*>(x);
 }
 
 void cantina_tilde_free(t_cantina_tilde *x)
@@ -97,20 +100,15 @@ void cantina_tilde_free(t_cantina_tilde *x)
     /* outlets */
     /** signals **/
     outlet_free(x->x_out_seed);
-    for(std::size_t i=0; i < x->cant->getNumberHarmonics(); ++i)
+    for(std::size_t i=0; i < x->cantina->getNumberHarmonics(); ++i)
     {
         outlet_free(x->x_out_harmonics[i]);
     }
-    freebytes(x->x_out_harmonics, x->cant->getNumberHarmonics() * sizeof(t_outlet*));
+    freebytes(x->x_out_harmonics, x->cantina->getNumberHarmonics() * sizeof(t_outlet*));
     /** midi **/
     outlet_free(x->x_out_notes);
     outlet_free(x->x_out_controls);
-    x->cant.reset();
-}
-
-int get_vec_size(const t_cantina_tilde *x)
-{
-    return 4 + (int) x->cant->getNumberHarmonics();
+    x->cantina.reset();
 }
 
 t_int* cantina_tilde_perform(t_int *w)
@@ -124,7 +122,7 @@ t_int* cantina_tilde_perform(t_int *w)
      * -> seed bypass
      */
     /** DOING STUFF **/
-    for(int i=0; i < (int) x->cant->getNumberHarmonics(); ++i)
+    for(int i=0; i < static_cast<int>(x->cantina->getNumberHarmonics()); ++i)
     {
         /* resetting samples in outlet before filling it again */
         std::fill(out_harmonics[i], out_harmonics[i] + blockSize, 0.);
@@ -132,46 +130,40 @@ t_int* cantina_tilde_perform(t_int *w)
     /** CANT **/
     try
     {
-        x->cant->perform(in, out_seed, out_harmonics, blockSize);
+        x->cantina->perform(in, out_seed, out_harmonics, blockSize);
     }
     catch (const cant::CantinaException& e)
     {
         std::cerr << e.what() << std::endl;
     }
-    t_int size = get_vec_size(x);
+    const t_int size = x->x_vec_dspargs.size();
     return (w + size + 1);
 }
 
 
-t_int* create_vec_dsp(int *size, t_cantina_tilde *x, t_signal **sp)
+void fill_vec_dspargs(t_cantina_tilde *x, t_signal **sp)
 {
-    *size = get_vec_size(x);
-    auto *vec = (t_int *)malloc((*size) * sizeof(t_int));
-    vec[0] = reinterpret_cast<t_int>(x);              // x
-    vec[1] = static_cast<t_int>(sp[0]->s_n);          // blockSize
-    vec[2] = reinterpret_cast<t_int>(sp[0]->s_vec);  // in
-    vec[3] = reinterpret_cast<t_int>(sp[1]->s_vec);
-    for(std::size_t i=0; i< x->cant->getNumberHarmonics(); ++i)
+    auto& vec = x->x_vec_dspargs;
+    vec.at(0) = reinterpret_cast<t_int>(x);                 // x
+    vec.at(1) = static_cast<t_int>(sp[0]->s_n);             // blockSize
+    vec.at(2) = reinterpret_cast<t_int>(sp[0]->s_vec);      // in
+    vec.at(3) = reinterpret_cast<t_int>(sp[1]->s_vec);      // out seed
+    for(std::size_t i=0; i< x->cantina->getNumberHarmonics(); ++i)
     {
-        vec[4 + i] = reinterpret_cast<t_int>(sp[2 + i]->s_vec);
+        vec.at(4 + i) = reinterpret_cast<t_int>(sp[2 + i]->s_vec); // out harmonics
     }
-    return vec;
 }
-
-void free_vec_dsp(t_int* vec) { free(vec); }
 
 void cantina_tilde_dsp(t_cantina_tilde *x, t_signal **sp)
 {
-    int size;
-    t_int* vec = create_vec_dsp(&size, x, sp);
+    fill_vec_dspargs(x, sp);
     dsp_addv(cantina_tilde_perform,
-            size,
-            vec
+            x->x_vec_dspargs.size(),
+            x->x_vec_dspargs.data()
             );
-    free_vec_dsp(vec);
 }
 
-void cantina_tilde_envelope(t_symbol *s, int argc, t_atom *argv)
+void cantina_tilde_envelope(t_symbol *, int argc, t_atom *argv)
 {
     /* todo */
     char type[20];
@@ -188,7 +180,7 @@ void cantina_tilde_envelope(t_symbol *s, int argc, t_atom *argv)
     }
 }
 
-void cantina_tilde_notes(t_cantina_tilde *x, t_symbol *s, int argc, t_atom *argv)
+void cantina_tilde_notes(t_cantina_tilde *x, t_symbol *, int argc, t_atom *argv)
 {
     if(argc < 2)
     {
@@ -196,13 +188,13 @@ void cantina_tilde_notes(t_cantina_tilde *x, t_symbol *s, int argc, t_atom *argv
         return;
     }
     /* voices of the poly object start at 1 */
-    const auto tone = static_cast<cant::pan::tone_u8>(atom_getfloat(argv));
+    const auto tone     = static_cast<cant::pan::tone_u8>(atom_getfloat(argv));
     const auto velocity = static_cast<cant::pan::vel_u8>(atom_getfloat(argv + 1));
     const cant::pan::id_u8 channel = 1;
     const auto data = cant::pan::MidiNoteInputData(channel, tone, velocity);
     try
     {
-        x->cant->receiveNote(data);
+        x->cantina->receiveNote(data);
     }
     catch (const cant::CantinaException& e)
     {
@@ -210,7 +202,7 @@ void cantina_tilde_notes(t_cantina_tilde *x, t_symbol *s, int argc, t_atom *argv
     }
 }
 
-void cantina_tilde_controls(t_cantina_tilde *x, t_symbol *s, int argc, t_atom *argv)
+void cantina_tilde_controls(t_cantina_tilde *x, t_symbol *, int argc, t_atom *argv)
 {
     if(argc < 2)
     {
@@ -234,7 +226,7 @@ void cantina_tilde_controls(t_cantina_tilde *x, t_symbol *s, int argc, t_atom *a
     const auto data = cant::pan::MidiControlInputData(channel, controllerId, value);
     try
     {
-        x->cant->receiveControl(data);
+        x->cantina->receiveControl(data);
     }
     catch (const cant::CantinaException& e)
     {
@@ -242,7 +234,7 @@ void cantina_tilde_controls(t_cantina_tilde *x, t_symbol *s, int argc, t_atom *a
     }
 }
 
-void cantina_tilde_controllers(t_cantina_tilde *x, t_symbol *s, int argc, t_atom *argv)
+void cantina_tilde_controllers(t_cantina_tilde *x, t_symbol *, int argc, t_atom *argv)
 {
     if(argc < 3)
     {
@@ -256,7 +248,7 @@ void cantina_tilde_controllers(t_cantina_tilde *x, t_symbol *s, int argc, t_atom
     const auto controllerId = static_cast<cant::pan::id_u8>(atom_getfloat(argv + 2));
     try
     {
-        x->cant->setController(type, channelId, { controllerId });
+        x->cantina->setController(type, channelId, {controllerId });
     }
     catch (const cant::CantinaException& e)
     {
@@ -276,7 +268,7 @@ extern "C" void cantina_tilde_setup(void)
     class_addmethod(cantina_tilde_class,
                     (t_method)cantina_tilde_dsp,
                     gensym("dsp"),
-                    A_CANT, // uhuh
+                    A_CANT,
                     0);
     class_addmethod(cantina_tilde_class,
                     (t_method)cantina_tilde_envelope,
@@ -302,7 +294,7 @@ extern "C" void cantina_tilde_setup(void)
                     A_GIMME,
                     0);
     CLASS_MAINSIGNALIN(cantina_tilde_class, t_cantina_tilde, f);
-    post("Cant version: %.2g", cant::CANTINA_VERSION);
-    post("Cant brew:    %s", cant::CANTINA_BREW);
+    post("Cant version : %.4g", cant::CANTINA_VERSION);
+    post("Cant brew    : %s", cant::CANTINA_BREW);
     post("~ tut-tut-tut-tut-tulut-tut ~");
 }
