@@ -33,9 +33,9 @@ set(CANTINA_DIR ${PROJECT_SOURCE_DIR}/cantina)
 add_subdirectory(${CANTINA_DIR})
 
 set(CANTINA_TILDE_CXX_FLAGS
-        "-fPIC -Werror \
+        "-fPIC \
+        -Werror \
              -Wall -Wshadow -Wnon-virtual-dtor -pedantic \
-             -O3 \
         "
         )
 set(CMAKE_CXX_STANDARD 20)
