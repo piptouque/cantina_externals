@@ -158,7 +158,7 @@ void cantina_tilde_dsp(t_cantina_tilde *x, t_signal **sp)
 {
     fill_vec_dspargs(x, sp);
     dsp_addv(cantina_tilde_perform,
-            x->x_vec_dspargs.size(),
+            static_cast<int>(x->x_vec_dspargs.size()),
             x->x_vec_dspargs.data()
             );
 }
@@ -188,8 +188,8 @@ void cantina_tilde_notes(t_cantina_tilde *x, t_symbol *, int argc, t_atom *argv)
         return;
     }
     /* voices of the poly object start at 1 */
-    const auto tone     = static_cast<cant::pan::tone_u8>(atom_getfloat(argv));
-    const auto velocity = static_cast<cant::pan::vel_u8>(atom_getfloat(argv + 1));
+    const auto tone     = static_cast<cant::pan::tone_i8>(atom_getfloat(argv));
+    const auto velocity = static_cast<cant::pan::vel_i8>(atom_getfloat(argv + 1));
     const cant::pan::id_u8 channel = 1;
     const auto data = cant::pan::MidiNoteInputData(channel, tone, velocity);
     try

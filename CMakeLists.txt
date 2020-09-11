@@ -25,29 +25,21 @@ message("PROJECT_LIB_DIR        : " ${PROJECT_LIB_DIR})
 message("GIT_SUBMODULE_DIR:    : " ${GIT_SUBMODULE_DIR})
 
 
-# variable used in pd.build
-set(PD_DIR ${GIT_SUBMODULE_DIR}/pure-data)
 
 #cantina
 set(CANTINA_DIR ${PROJECT_SOURCE_DIR}/cantina)
 add_subdirectory(${CANTINA_DIR})
 
-set(CANTINA_TILDE_CXX_FLAGS
-        "-fPIC \
-        -Werror \
-             -Wall -Wshadow -Wnon-virtual-dtor -pedantic \
-        "
-        )
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_FLAGS ${CANTINA_TILDE_CXX_FLAGS})
-
-# flags
 
 include_directories(
         ${CANTINA_TILDE_INCLUDE_DIR}
         ${CANTINA_INCLUDE_DIRS}
 )
 
+# variable used in pd.build
+set(PD_DIR ${GIT_SUBMODULE_DIR}/pure-data)
 
 set(CMAKE_SUPPRESS_REGENERATION true)
 # who cares about mac anyway ?
