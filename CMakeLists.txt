@@ -64,5 +64,5 @@ add_pd_external(cantina_tilde cantina~ ${CANTINA_TILDE_FILES})
 
 # LINKIN'
 target_link_libraries(cantina_tilde
-        "${CANTINA_LIBRARIES}"
+        ${CANTINA_LIBRARIES}
         )
