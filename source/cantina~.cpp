@@ -49,7 +49,7 @@ void* cantina_tilde_new(const t_symbol *, const int argc, t_atom *argv)
     {
         x->cantina = std::make_unique<cant::Cantina>(
                 numberHarmonics,
-                sys_getsr() /* sample rate */
+                static_cast<std::size_t>(sys_getsr()) /* sample rate */
         );
     }
     catch (const cant::CantinaException& e)
