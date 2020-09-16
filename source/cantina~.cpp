@@ -8,10 +8,8 @@
 #include <memory>
 #include <cmath>
 
-/******** utility *******/
 
-/******** pd stuff ********/
-
+/******** declaration ********/
 static t_class *cantina_tilde_class;
 
 typedef struct
@@ -26,30 +24,121 @@ typedef struct
     t_outlet *x_out_seed;
     t_outlet **x_out_harmonics;
     /** midi-related stuff **/
-    t_outlet *x_out_notes;
+    t_outlet **x_out_notes;
     t_outlet *x_out_controls;
     /* values */
     /* intern */
     std::unique_ptr<cant::Cantina> cantina;
     std::vector<t_sample*> s_vec_harmonics;
+
+    /* cache */
+    /** dsp args **/
     std::vector<t_int> x_vec_dspargs;
+    /** atoms (list) **/
+    std::vector<t_atom*> x_vec_a_notes;
+    t_atom *x_a_control;
+
 } t_cantina_tilde;
+
+/******** utility *******/
+
+void allocate_vec_notes_atoms(t_cantina_tilde *x)
+{
+    x->x_vec_a_notes.reserve(x->cantina->getNumberHarmonics());
+   for (cant::size_u i = 0; i < x->cantina->getNumberHarmonics(); ++i)
+   {
+       auto *a = static_cast<t_atom*>(getbytes(6 * sizeof(t_atom)));
+       if (!a)
+       {
+           error("cantina~: failed to allocate output note message.");
+       }
+       x->x_vec_a_notes.push_back(a);
+   }
+}
+
+void allocate_control_atoms(t_cantina_tilde *x)
+{
+    x->x_a_control = static_cast<t_atom*>(getbytes(3 * sizeof(t_atom)));
+    if (!x->x_a_control)
+    {
+        error("cantina~: failed to allocate output control message.");
+    }
+}
+
+void free_vec_notes_atoms(t_cantina_tilde *x)
+{
+    for (auto& a : x->x_vec_a_notes)
+    {
+        freebytes(a, 6 * sizeof(t_atom));
+    }
+}
+
+void free_control_atoms(t_cantina_tilde *x)
+{
+    freebytes(x->x_a_control, 3 * sizeof(t_atom));
+}
+
+void fill_vec_noteargs(t_cantina_tilde *x, const cant::pan::MidiNoteOutput& note)
+{
+    t_atom* a = x->x_vec_a_notes.at(note.getVoice());
+    // [tone, velocity, channel, pan, isPlaying, justChangedPlaying]
+    SETFLOAT(a, note.getTone());
+    SETFLOAT(a + 1, note.getVelocityPlaying());
+    SETFLOAT(a + 2, note.getChannel());
+    SETFLOAT(a + 3, note.getPan());
+    SETFLOAT(a + 4, note.isPlaying());
+    SETFLOAT(a + 5 , note.justChangedPlaying());
+}
+
+void fill_controlargs(t_cantina_tilde *x, const cant::pan::MidiControlData& data)
+{
+    t_atom* a = x->x_a_control;
+    // [value, controller id, channel]
+    SETFLOAT(a, data.getValue());
+    SETFLOAT(a + 1, data.getId());
+    SETFLOAT(a + 2, data.getChannel());
+}
+
+void fill_vec_dspargs(t_cantina_tilde *x, t_signal **sp)
+{
+    auto& vec = x->x_vec_dspargs;
+    vec.at(0) = reinterpret_cast<t_int>(x);                 // x
+    vec.at(1) = static_cast<t_int>(sp[0]->s_n);             // blockSize
+    vec.at(2) = reinterpret_cast<t_int>(sp[0]->s_vec);      // in
+    vec.at(3) = reinterpret_cast<t_int>(sp[1]->s_vec);      // out seed
+    for (cant::size_u i=0; i< x->cantina->getNumberHarmonics(); ++i)
+    {
+        vec.at(4 + i) = reinterpret_cast<t_int>(sp[2 + i]->s_vec); // out harmonics
+    }
+}
+
+void send_notes_output(t_cantina_tilde *x)
+{
+    for (cant::size_u i = 0; i < x->cantina->getNumberHarmonics(); ++i)
+    {
+        const cant::pan::MidiNoteOutput& note = x->cantina->getProcessedVoice(i);
+        fill_vec_noteargs(x, note);
+        outlet_list(x->x_out_notes[i], &s_list, 6, x->x_vec_a_notes.at(i));
+    }
+}
+/******** implementation ********/
 
 void* cantina_tilde_new(const t_symbol *, const int argc, t_atom *argv)
 {
     auto *x = (t_cantina_tilde*)pd_new(cantina_tilde_class);
     /* number of harmonics */
-    t_float n_arg = 0;
+    t_int n_arg = 0;
     if(argc)
     {
-            n_arg = atom_getfloat(argv);
+            n_arg = atom_getint(argv);
     }
-    const std::size_t numberHarmonics = std::max<std::size_t>(0, std::floor(n_arg));
+    const cant::size_u numberHarmonics = std::max<cant::size_u>(0, n_arg);
     try
     {
         x->cantina = std::make_unique<cant::Cantina>(
                 numberHarmonics,
-                static_cast<std::size_t>(sys_getsr()) /* sample rate */
+                static_cast<cant::size_u>(sys_getsr()), // sample rate
+                1 // channel
         );
     }
     catch (const cant::CantinaException& e)
@@ -73,41 +162,52 @@ void* cantina_tilde_new(const t_symbol *, const int argc, t_atom *argv)
     /* outlets */
     /** signals **/
     x->x_out_seed = outlet_new(&x->x_obj, &s_signal);
-    /** midi (here because not dynamic) **/
-    x->x_out_notes = outlet_new(&x->x_obj, &s_list);
     x->x_out_controls = outlet_new(&x->x_obj, &s_list);
+    x->x_out_notes = (t_outlet**)getbytes(x->cantina->getNumberHarmonics() * sizeof(t_outlet*));
+    if (!x->x_out_notes)
+    {
+        error("cantina~: failed to allocate note outlets.");
+    }
     /** signals again **/
     x->x_out_harmonics = (t_outlet**)getbytes(x->cantina->getNumberHarmonics() * sizeof(t_outlet*));
-    if(!x->x_out_harmonics)
+    if (!x->x_out_harmonics)
     {
-        post("cantina~: failed to allocate outlets.");
+        error("cantina~: failed to allocate harmonic outlets.");
     }
-    for(std::size_t i=0; i < x->cantina->getNumberHarmonics(); ++i)
+    for (cant::size_u i=0; i < x->cantina->getNumberHarmonics(); ++i)
     {
         x->x_out_harmonics[i] = outlet_new(&x->x_obj, &s_signal);
+        x->x_out_notes[i] = outlet_new(&x->x_obj, &s_list);
     }
-    /** dsp args vector **/
+    /* dsp args vector */
     x->x_vec_dspargs = std::vector<t_int>(4 + x->cantina->getNumberHarmonics());
+    /* atoms */
+    allocate_vec_notes_atoms(x);
+    allocate_control_atoms(x);
     return static_cast<void*>(x);
 }
 
 void cantina_tilde_free(t_cantina_tilde *x)
 {
-
-    /* inlets */
-    inlet_free(x->x_in_notes);
-    inlet_free(x->x_in_controls);
+    /* atom */
+    free_vec_notes_atoms(x);
+    free_control_atoms(x);
     /* outlets */
     /** signals **/
     outlet_free(x->x_out_seed);
-    for(std::size_t i=0; i < x->cantina->getNumberHarmonics(); ++i)
+    for (cant::size_u i=0; i < x->cantina->getNumberHarmonics(); ++i)
     {
+        outlet_free(x->x_out_notes[i]);
         outlet_free(x->x_out_harmonics[i]);
     }
+    freebytes(x->x_out_notes, x->cantina->getNumberHarmonics() * sizeof(t_outlet*));
     freebytes(x->x_out_harmonics, x->cantina->getNumberHarmonics() * sizeof(t_outlet*));
     /** midi **/
-    outlet_free(x->x_out_notes);
     outlet_free(x->x_out_controls);
+    /* inlets */
+    inlet_free(x->x_in_notes);
+    inlet_free(x->x_in_controls);
+    /** cantina **/
     x->cantina.reset();
 }
 
@@ -122,7 +222,7 @@ t_int* cantina_tilde_perform(t_int *w)
      * -> seed bypass
      */
     /** DOING STUFF **/
-    for(int i=0; i < static_cast<int>(x->cantina->getNumberHarmonics()); ++i)
+    for (int i=0; i < static_cast<int>(x->cantina->getNumberHarmonics()); ++i)
     {
         /* resetting samples in outlet before filling it again */
         std::fill(out_harmonics[i], out_harmonics[i] + blockSize, 0.);
@@ -131,6 +231,7 @@ t_int* cantina_tilde_perform(t_int *w)
     try
     {
         x->cantina->perform(in, out_seed, out_harmonics, blockSize);
+        send_notes_output(x);
     }
     catch (const cant::CantinaException& e)
     {
@@ -141,18 +242,6 @@ t_int* cantina_tilde_perform(t_int *w)
 }
 
 
-void fill_vec_dspargs(t_cantina_tilde *x, t_signal **sp)
-{
-    auto& vec = x->x_vec_dspargs;
-    vec.at(0) = reinterpret_cast<t_int>(x);                 // x
-    vec.at(1) = static_cast<t_int>(sp[0]->s_n);             // blockSize
-    vec.at(2) = reinterpret_cast<t_int>(sp[0]->s_vec);      // in
-    vec.at(3) = reinterpret_cast<t_int>(sp[1]->s_vec);      // out seed
-    for(std::size_t i=0; i< x->cantina->getNumberHarmonics(); ++i)
-    {
-        vec.at(4 + i) = reinterpret_cast<t_int>(sp[2 + i]->s_vec); // out harmonics
-    }
-}
 
 void cantina_tilde_dsp(t_cantina_tilde *x, t_signal **sp)
 {
@@ -170,7 +259,7 @@ void cantina_tilde_envelope(t_symbol *, int argc, t_atom *argv)
     switch (argc)
     {
         case 0:
-            post("MidiEnvelope method not set.");
+            post("cantina~: MidiEnvelope method not set.");
             return;
         case 1:
             atom_string(argv + 1, type, 20);
@@ -182,31 +271,41 @@ void cantina_tilde_envelope(t_symbol *, int argc, t_atom *argv)
 
 void cantina_tilde_notes(t_cantina_tilde *x, t_symbol *, int argc, t_atom *argv)
 {
-    if(argc < 2)
+    if (argc < 3)
     {
-        post("Wrong format for note input: expected tone and velocity.");
+        post("cantina~: Wrong format for note input: expected [tone, velocity, channel]");
         return;
     }
     /* voices of the poly object start at 1 */
     const auto tone     = static_cast<cant::pan::tone_i8>(atom_getfloat(argv));
-    const auto velocity = static_cast<cant::pan::vel_i8>(atom_getfloat(argv + 1));
-    const cant::pan::id_u8 channel = 1;
+    const auto velocity = static_cast<cant::pan::vel_i8> (atom_getfloat(argv + 1));
+    const auto  channel = static_cast<cant::pan::id_u8>  (atom_getfloat(argv + 2));
     const auto data = cant::pan::MidiNoteInputData(channel, tone, velocity);
+    std::optional<cant::size_u> optVoice;
     try
     {
-        x->cantina->receiveNote(data);
+        optVoice = x->cantina->receiveNote(data);
     }
     catch (const cant::CantinaException& e)
     {
         std::cerr << e.what() << std::endl;
     }
+
+    // if note was stored, send it to output
+    if (optVoice)
+    {
+        const std::size_t voice = optVoice.value();
+        const cant::pan::MidiNoteOutput& note = x->cantina->getProcessedVoice(voice);
+        fill_vec_noteargs(x, note);
+        outlet_list(x->x_out_notes[voice], &s_list, 6, x->x_vec_a_notes.at(voice));
+    }
 }
 
 void cantina_tilde_controls(t_cantina_tilde *x, t_symbol *, int argc, t_atom *argv)
 {
-    if(argc < 2)
+    if (argc < 3)
     {
-        post("Mais non c'est pas ça !!");
+        post("cantina~: Wrong format for control input: expected [value, controller id, channel]");
         return;
     }
     /*
@@ -220,9 +319,9 @@ void cantina_tilde_controls(t_cantina_tilde *x, t_symbol *, int argc, t_atom *ar
      * So I'll just switch value first and controller id second, then.
      * Awesome!
      */
-    const cant::pan::id_u8 channel = 1;
-    const auto value = static_cast<cant::pan::id_u8>(atom_getfloat(argv));
-    const auto controllerId = static_cast<cant::pan::id_u8>(atom_getfloat(argv + 1));
+    const auto value        = static_cast<cant::pan::id_u8>(atom_getfloat(argv));
+    const auto controllerId = static_cast<cant::pan::id_u8>(atom_getint(argv + 1));
+    const auto channel      = static_cast<cant::pan::id_u8>(atom_getint(argv + 2));
     const auto data = cant::pan::MidiControlInputData(channel, controllerId, value);
     try
     {
@@ -232,23 +331,27 @@ void cantina_tilde_controls(t_cantina_tilde *x, t_symbol *, int argc, t_atom *ar
     {
        std::cerr << e.what() << std::endl;
     }
+
+    // send to output
+    fill_controlargs(x, data);
+    outlet_list(x->x_out_controls, &s_list, 3, x->x_a_control);
 }
 
 void cantina_tilde_controllers(t_cantina_tilde *x, t_symbol *, int argc, t_atom *argv)
 {
-    if(argc < 3)
+    if (argc < 3)
     {
-        post("Wrong format for controller definition: expected type, channel, and controller id.");
+        post("cantina~: Wrong format for controller definition: expected [type, controller id, channel]");
         return;
     }
     char buf[20];
     atom_string(argv, buf, 20);
-    const auto type = std::string(buf);
-    const auto channelId  = static_cast<cant::pan::id_u8>(atom_getfloat(argv + 1));
-    const auto controllerId = static_cast<cant::pan::id_u8>(atom_getfloat(argv + 2));
+    const auto type         = std::string(buf);
+    const auto controllerId = static_cast<cant::pan::id_u8>(atom_getint(argv + 1));
+    const auto channel      = static_cast<cant::pan::id_u8>(atom_getint(argv + 2));
     try
     {
-        x->cantina->setController(type, channelId, {controllerId });
+        x->cantina->setController(type, channel, { controllerId });
     }
     catch (const cant::CantinaException& e)
     {
@@ -263,19 +366,21 @@ extern "C" void cantina_tilde_setup(void)
             (t_method)cantina_tilde_free,
             sizeof(t_cantina_tilde),
             CLASS_DEFAULT,
-            A_GIMME, 0);
+            A_GIMME, 0
+    );
 
     class_addmethod(cantina_tilde_class,
                     (t_method)cantina_tilde_dsp,
                     gensym("dsp"),
                     A_CANT,
-                    0);
+                    0
+    );
     class_addmethod(cantina_tilde_class,
                     (t_method)cantina_tilde_envelope,
                     gensym("envelope"),
                     A_GIMME,
                     0
-            );
+    );
     class_addmethod(cantina_tilde_class,
                     (t_method)cantina_tilde_notes,
                     gensym("notes"),
@@ -287,14 +392,15 @@ extern "C" void cantina_tilde_setup(void)
                     gensym("controls"),
                     A_GIMME,
                     0
-            );
+    );
     class_addmethod(cantina_tilde_class,
                     (t_method)cantina_tilde_controllers,
                     gensym("controller"),
                     A_GIMME,
-                    0);
+                    0
+    );
     CLASS_MAINSIGNALIN(cantina_tilde_class, t_cantina_tilde, f);
-    post("Cant version : %.5g", cant::CANTINA_VERSION);
+    post("Cant version : %s", cant::CANTINA_VERSION);
     post("Cant brew    : %s", cant::CANTINA_BREW);
     post("~ tut-tut-tut-tut-tulut-tut ~");
 }
