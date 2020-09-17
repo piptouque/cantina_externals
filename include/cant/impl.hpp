@@ -11,4 +11,6 @@ extern "C" {
 #include <m_pd.h>
 }
 
+#include <cant/common/types.hpp>
+
 #endif //CANTINA_IMPL_HPP

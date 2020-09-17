@@ -26,12 +26,13 @@ typedef struct
     /** midi-related stuff **/
     t_outlet **x_out_notes;
     t_outlet *x_out_controls;
-    /* values */
-    /* intern */
+    /* internal */
     std::unique_ptr<cant::Cantina> cantina;
     std::vector<t_sample*> s_vec_harmonics;
-
     /* cache */
+    /** time **/
+    // consider const!
+    double x_t_start_systime;
     /** dsp args **/
     std::vector<t_int> x_vec_dspargs;
     /** atoms (list) **/
@@ -82,12 +83,12 @@ void fill_vec_noteargs(t_cantina_tilde *x, const cant::pan::MidiNoteOutput& note
 {
     t_atom* a = x->x_vec_a_notes.at(note.getVoice());
     // [tone, velocity, channel, pan, isPlaying, justChangedPlaying]
-    SETFLOAT(a, note.getTone());
-    SETFLOAT(a + 1, note.getVelocityPlaying());
-    SETFLOAT(a + 2, note.getChannel());
-    SETFLOAT(a + 3, note.getPan());
-    SETFLOAT(a + 4, note.isPlaying());
-    SETFLOAT(a + 5 , note.justChangedPlaying());
+    SETFLOAT(a,    static_cast<t_float>(note.getTone()));
+    SETFLOAT(a + 1, static_cast<t_float>(note.getVelocityPlaying()));
+    SETFLOAT(a + 2, static_cast<t_float>(note.getChannel()));
+    SETFLOAT(a + 3, static_cast<t_float>( note.getPan()));
+    SETFLOAT(a + 4, static_cast<t_float>( note.isPlaying()));
+    SETFLOAT(a + 5, static_cast<t_float>( note.justChangedPlaying()));
 }
 
 void fill_controlargs(t_cantina_tilde *x, const cant::pan::MidiControlData& data)
@@ -121,24 +122,40 @@ void send_notes_output(t_cantina_tilde *x)
         outlet_list(x->x_out_notes[i], &s_list, 6, x->x_vec_a_notes.at(i));
     }
 }
+
 /******** implementation ********/
 
 void* cantina_tilde_new(const t_symbol *, const int argc, t_atom *argv)
 {
-    auto *x = (t_cantina_tilde*)pd_new(cantina_tilde_class);
-    /* number of harmonics */
+    auto *x = reinterpret_cast<t_cantina_tilde*>(pd_new(cantina_tilde_class));
+    /* args */
     t_int n_arg = 0;
-    if(argc)
+    if (argc)
     {
-            n_arg = atom_getint(argv);
+        n_arg = atom_getint(argv);
     }
-    const cant::size_u numberHarmonics = std::max<cant::size_u>(0, n_arg);
+    const auto numberHarmonics = static_cast<cant::size_u>(std::max<t_int>(0, n_arg));
+    /* time */
+    x->x_t_start_systime = clock_getlogicaltime();
+    /* cantina */
     try
     {
         x->cantina = std::make_unique<cant::Cantina>(
                 numberHarmonics,
-                static_cast<cant::size_u>(sys_getsr()), // sample rate
+                static_cast<cant::type_i>(std::round(sys_getsr())), // sample rate
                 1 // channel
+        );
+        const double start_systime = x->x_t_start_systime;
+        /*
+         * So, there are issues with using <chrono> utility with pd,
+         * delta time is not regular.
+         * So now we hook pd's own clock system to our midi timer.
+         */
+        x->cantina->setCurrentTimeGetter(
+                [start_systime]() -> cant::pan::time_d
+                {
+                    return  clock_gettimesince(start_systime) / 1000;
+                }
         );
     }
     catch (const cant::CantinaException& e)
@@ -163,13 +180,13 @@ void* cantina_tilde_new(const t_symbol *, const int argc, t_atom *argv)
     /** signals **/
     x->x_out_seed = outlet_new(&x->x_obj, &s_signal);
     x->x_out_controls = outlet_new(&x->x_obj, &s_list);
-    x->x_out_notes = (t_outlet**)getbytes(x->cantina->getNumberHarmonics() * sizeof(t_outlet*));
+    x->x_out_notes = static_cast<t_outlet**>(getbytes(x->cantina->getNumberHarmonics() * sizeof(t_outlet*)));
     if (!x->x_out_notes)
     {
         error("cantina~: failed to allocate note outlets.");
     }
     /** signals again **/
-    x->x_out_harmonics = (t_outlet**)getbytes(x->cantina->getNumberHarmonics() * sizeof(t_outlet*));
+    x->x_out_harmonics = static_cast<t_outlet**>(getbytes(x->cantina->getNumberHarmonics() * sizeof(t_outlet*)));
     if (!x->x_out_harmonics)
     {
         error("cantina~: failed to allocate harmonic outlets.");
@@ -192,6 +209,8 @@ void cantina_tilde_free(t_cantina_tilde *x)
     /* atom */
     free_vec_notes_atoms(x);
     free_control_atoms(x);
+    /* utility */
+    // clock_free(x->x_clock);
     /* outlets */
     /** signals **/
     outlet_free(x->x_out_seed);
@@ -230,6 +249,8 @@ t_int* cantina_tilde_perform(t_int *w)
     /** CANT **/
     try
     {
+
+        x->cantina->update();
         x->cantina->perform(in, out_seed, out_harmonics, blockSize);
         send_notes_output(x);
     }
@@ -237,7 +258,7 @@ t_int* cantina_tilde_perform(t_int *w)
     {
         std::cerr << e.what() << std::endl;
     }
-    const t_int size = x->x_vec_dspargs.size();
+    const auto size = static_cast<t_int>(x->x_vec_dspargs.size());
     return (w + size + 1);
 }
 
@@ -322,7 +343,7 @@ void cantina_tilde_controls(t_cantina_tilde *x, t_symbol *, int argc, t_atom *ar
     const auto value        = static_cast<cant::pan::id_u8>(atom_getfloat(argv));
     const auto controllerId = static_cast<cant::pan::id_u8>(atom_getint(argv + 1));
     const auto channel      = static_cast<cant::pan::id_u8>(atom_getint(argv + 2));
-    const auto data = cant::pan::MidiControlInputData(channel, controllerId, value);
+    const auto data         = cant::pan::MidiControlInputData(channel, controllerId, value);
     try
     {
         x->cantina->receiveControl(data);
@@ -362,39 +383,39 @@ void cantina_tilde_controllers(t_cantina_tilde *x, t_symbol *, int argc, t_atom 
 extern "C" void cantina_tilde_setup(void)
 {
     cantina_tilde_class = class_new(gensym("cantina~"),
-            (t_newmethod)cantina_tilde_new,
-            (t_method)cantina_tilde_free,
+            reinterpret_cast<t_newmethod>(cantina_tilde_new),
+            reinterpret_cast<t_method>(cantina_tilde_free),
             sizeof(t_cantina_tilde),
             CLASS_DEFAULT,
             A_GIMME, 0
     );
 
     class_addmethod(cantina_tilde_class,
-                    (t_method)cantina_tilde_dsp,
+                    reinterpret_cast<t_method>(cantina_tilde_dsp),
                     gensym("dsp"),
                     A_CANT,
                     0
     );
     class_addmethod(cantina_tilde_class,
-                    (t_method)cantina_tilde_envelope,
+                    reinterpret_cast<t_method>(cantina_tilde_envelope),
                     gensym("envelope"),
                     A_GIMME,
                     0
     );
     class_addmethod(cantina_tilde_class,
-                    (t_method)cantina_tilde_notes,
+                    reinterpret_cast<t_method>(cantina_tilde_notes),
                     gensym("notes"),
                     A_GIMME,
                     0
     );
     class_addmethod(cantina_tilde_class,
-                    (t_method)cantina_tilde_controls,
+                    reinterpret_cast<t_method>(cantina_tilde_controls),
                     gensym("controls"),
                     A_GIMME,
                     0
     );
     class_addmethod(cantina_tilde_class,
-                    (t_method)cantina_tilde_controllers,
+                    reinterpret_cast<t_method>(cantina_tilde_controllers),
                     gensym("controller"),
                     A_GIMME,
                     0
