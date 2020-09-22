@@ -31,7 +31,7 @@ typedef struct
     std::vector<t_sample*> s_vec_harmonics;
     /* cache */
     /** time **/
-    // consider const!
+    // see const!
     double x_t_start_systime;
     /** dsp args **/
     std::vector<t_int> x_vec_dspargs;
@@ -151,12 +151,12 @@ void* cantina_tilde_new(const t_symbol *, const int argc, t_atom *argv)
          * delta time is not regular.
          * So now we hook pd's own clock system to our midi timer.
          */
-        x->cantina->setCurrentTimeGetter(
-                [start_systime]() -> cant::pan::time_d
+        x->cantina->setCustomClock(
+                [start_systime]() -> cant::time_d
                 {
-                    return  clock_gettimesince(start_systime) / 1000;
+                    return clock_gettimesince(start_systime) / 1000;
                 }
-        );
+                                  );
     }
     catch (const cant::CantinaException& e)
     {
@@ -383,6 +383,10 @@ void cantina_tilde_controllers(t_cantina_tilde *x, t_symbol *, int argc, t_atom 
 extern "C" void cantina_tilde_setup(void)
 {
     cantina_tilde_class = class_new(gensym("cantina~"),
+            // gcc gives a cast-function-type error here, (remove
+            // because t_newmethod is a void* ()(void)
+            // whereas cantina_tilde_new takes arguments.
+            // oh well.
             reinterpret_cast<t_newmethod>(cantina_tilde_new),
             reinterpret_cast<t_method>(cantina_tilde_free),
             sizeof(t_cantina_tilde),

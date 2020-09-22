@@ -57,10 +57,23 @@ set(CANTINA_TILDE_FILES
         ${CANTINA_TILDE_INCLUDE_DIR}/cantina~.hpp
         ${CANTINA_TILDE_INCLUDE_DIR}/cant/impl.hpp
 
+
+
         ${CANTINA_FILES}
         )
 
+set(BITCRUSH_TILDE_FILES
+        ${CANTINA_TILDE_SOURCE_DIR}/bitcrush~.c
+        ${CANTINA_TILDE_INCLUDE_DIR}/bitcrush~.h
+        )
+
+set(DECIMATE_TILDE_FILES
+        ${CANTINA_TILDE_SOURCE_DIR}/decimate~.c
+        ${CANTINA_TILDE_SOURCE_DIR}/decimate~.h
+        )
+
 add_pd_external(cantina_tilde cantina~ ${CANTINA_TILDE_FILES})
+# add_pd_external(bitcrush_tilde bitcrush~ ${BITCRUSH_TILDE_FILES})
 
 # LINKIN'
 target_link_libraries(cantina_tilde

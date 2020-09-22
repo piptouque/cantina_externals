@@ -31,7 +31,7 @@
 #X obj 269 618 outlet;
 #X text 12 65 Damper has to be received \; Not updated every frame
 as an argument \;;
-#X text 319 356 Only update velocity if it is not null. In case the
+#X text 319 356 Only updateDelta velocity if it is not null. In case the
 damper pedal is pressed.;
 #X text 362 632 outlets (left to right) \; 1) rectified velocity (damper)
 \; 2) is the harmonic playable? \;;
