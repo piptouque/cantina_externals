@@ -151,12 +151,14 @@ void* cantina_tilde_new(const t_symbol *, const int argc, t_atom *argv)
          * delta time is not regular.
          * So now we hook pd's own clock system to our midi timer.
          */
-        x->cantina->setCustomClock(
+        x->cantina->setCustomClock
+        (
                 [start_systime]() -> cant::time_d
                 {
-                    return clock_gettimesince(start_systime) / 1000;
+                    const cant::type_d t = clock_gettimesince(start_systime) / 1000;
+                    return t;
                 }
-                                  );
+        );
     }
     catch (const cant::CantinaException& e)
     {
