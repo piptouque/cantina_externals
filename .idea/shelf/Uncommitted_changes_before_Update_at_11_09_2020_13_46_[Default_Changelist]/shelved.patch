@@ -1,0 +1,12 @@
+Index: cantina/third-party/soundtouch
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- cantina/third-party/soundtouch	(revision 088c21d9ea56a802b1c111200d37a6980f7e0e09)
++++ cantina/third-party/soundtouch	(date 1599824760992)
+@@ -1,1 +1,1 @@
+-d7e47bda6965db69c2be34685b2e0fe61d40774d
+\ No newline at end of file
++3e74d1d18f35ab127c9702b7ccda5bfb093d9219
+\ No newline at end of file

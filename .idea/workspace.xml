@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="cantina_tilde" targetName="cantina" />
+      <config projectName="cantina_tilde" targetName="cantina_tilde" />
+      <config projectName="cantina_tilde" targetName="soundtouch" />
+      <config projectName="cantina_tilde" targetName="pantoufle" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Release" CONFIG_NAME="Release" BUILD_OPTIONS="-- -j 3" />
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" GENERATION_DIR="cmake-build-debug" />
+      <configuration PROFILE_NAME="Release-Coverage" CONFIG_NAME="Release" GENERATION_OPTIONS="-DCMAKE_CXX_FLAGS=--coverage -DCMAKE_C_FLAGS=--coverage" BUILD_OPTIONS="-- -j 3" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c7d492f9-50fd-4f80-a51d-ee93e33e1bae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/event/EventHandler.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/macro.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/macro.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/event/Listen.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/event/event.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/event/event.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/event/event_forward.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/event/event_forward.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/event/Listen.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/event/EventHandler.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/timer/ChangeFlagUpdatable.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/timer/ChangeFlagUpdatable.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/timer/MidiTimer.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/timer/MidiTimer.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/timer/TimeUpdatable.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/timer/TimeUpdatable.hpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+        <option value="C++ Source Cant" />
+        <option value="C++ Source Pan" />
+        <option value="C++ Header Cant" />
+        <option value="C++ Inline Pan" />
+        <option value="C++ Header Pan" />
+        <option value="C++ Inline Cant" />
+      </list>
+    </option>
+    <option name="SCHEME" value="Project" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/cantina/pantoufle/cantina_common" />
+  </component>
+  <component name="OCResolveContextSettings">
+    <option name="configuration" value="1-Debug-pantoufle" />
+  </component>
+  <component name="ProblemsViewState">
+    <hideBySeverity>
+      <option value="15" />
+    </hideBySeverity>
+  </component>
+  <component name="ProjectId" id="1fEnyRQw7nleSuafQQlbET1DS0j" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
+    <property name="OCFindUsagesOptions.isSearchForTextOccurrences" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.advertisement.text.overridden" value="true" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="GitIgnore" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics" />
+      <recent name="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics" />
+      <recent name="$PROJECT_DIR$/cantina/pantoufle/inline/cant/pan/time" />
+      <recent name="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/time" />
+      <recent name="$PROJECT_DIR$/cantina/eureka" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/maths/algebra" />
+      <recent name="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/maths/algebra" />
+      <recent name="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/maths" />
+      <recent name="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/maths" />
+      <recent name="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant" />
+    </key>
+  </component>
+  <component name="RunManager" selected="CMake Application.cantina_tilde">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bitcrush_tilde" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$ContentRoot$/patches/test_it/test_bitcrush.pd" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cantina_tilde" TARGET_NAME="bitcrush_tilde" CONFIG_NAME="Release" RUN_PATH="$USER_HOME$/pd-502/bin/pd">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cantina" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cantina_tilde" TARGET_NAME="cantina" CONFIG_NAME="Release">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cantina_tilde" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$ContentRoot$/patches/Alive.pd" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cantina_tilde" TARGET_NAME="cantina_tilde" CONFIG_NAME="Release" RUN_PATH="$USER_HOME$/pd-502/bin/pd">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pantoufle" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cantina_tilde" TARGET_NAME="pantoufle" CONFIG_NAME="Release">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="soundtouch" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cantina_tilde" TARGET_NAME="soundtouch" CONFIG_NAME="Release">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.bitcrush_tilde" />
+      <item itemvalue="CMake Application.cantina" />
+      <item itemvalue="CMake Application.cantina_tilde" />
+      <item itemvalue="CMake Application.pantoufle" />
+      <item itemvalue="CMake Application.soundtouch" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c7d492f9-50fd-4f80-a51d-ee93e33e1bae" name="Default Changelist" comment="" />
+      <created>1595792373934</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595792373934</updated>
+      <workItem from="1595792375211" duration="194000" />
+      <workItem from="1595792594999" duration="5691000" />
+      <workItem from="1595870973553" duration="8972000" />
+      <workItem from="1595959989452" duration="6751000" />
+      <workItem from="1596055904879" duration="2487000" />
+      <workItem from="1596137528671" duration="5463000" />
+      <workItem from="1596143206146" duration="260000" />
+      <workItem from="1596270340424" duration="614000" />
+      <workItem from="1596272847585" duration="7219000" />
+      <workItem from="1596280319572" duration="28752000" />
+      <workItem from="1596354789529" duration="21731000" />
+      <workItem from="1596478581187" duration="7968000" />
+      <workItem from="1596563293275" duration="3033000" />
+      <workItem from="1596650039565" duration="4609000" />
+      <workItem from="1596736633193" duration="1635000" />
+      <workItem from="1596824929740" duration="1430000" />
+      <workItem from="1596828756495" duration="5265000" />
+      <workItem from="1596876459356" duration="15815000" />
+      <workItem from="1596907427277" duration="614000" />
+      <workItem from="1596959022100" duration="13714000" />
+      <workItem from="1596972762910" duration="6774000" />
+      <workItem from="1597952806617" duration="355000" />
+      <workItem from="1598019845006" duration="303000" />
+      <workItem from="1598031487417" duration="9804000" />
+      <workItem from="1598089606385" duration="8239000" />
+      <workItem from="1598103041498" duration="2039000" />
+      <workItem from="1598106215515" duration="599000" />
+      <workItem from="1598173823194" duration="1181000" />
+      <workItem from="1598180672935" duration="4246000" />
+      <workItem from="1598194107972" duration="3016000" />
+      <workItem from="1598299043996" duration="7447000" />
+      <workItem from="1598526907745" duration="988000" />
+      <workItem from="1598649538942" duration="4097000" />
+      <workItem from="1598803692301" duration="3401000" />
+      <workItem from="1598969764332" duration="3705000" />
+      <workItem from="1598990809388" duration="1236000" />
+      <workItem from="1599332871726" duration="1015000" />
+      <workItem from="1599476037546" duration="807000" />
+      <workItem from="1599497620202" duration="1057000" />
+      <workItem from="1599554711158" duration="403000" />
+      <workItem from="1599555833978" duration="6893000" />
+      <workItem from="1599563467842" duration="2950000" />
+      <workItem from="1599728225296" duration="21063000" />
+      <workItem from="1599751965553" duration="173000" />
+      <workItem from="1599752157201" duration="3875000" />
+      <workItem from="1599760992054" duration="6388000" />
+      <workItem from="1599771525514" duration="5203000" />
+      <workItem from="1599824742429" duration="1767000" />
+      <workItem from="1599836049568" duration="1095000" />
+      <workItem from="1599985245811" duration="18177000" />
+      <workItem from="1600012223906" duration="3548000" />
+      <workItem from="1600084639130" duration="653000" />
+      <workItem from="1600164856364" duration="3910000" />
+      <workItem from="1600185775931" duration="1870000" />
+      <workItem from="1600188455006" duration="2700000" />
+      <workItem from="1600191382603" duration="4200000" />
+      <workItem from="1600247563157" duration="6135000" />
+      <workItem from="1600268448613" duration="4440000" />
+      <workItem from="1600273569424" duration="4655000" />
+      <workItem from="1600278426692" duration="606000" />
+      <workItem from="1600340888440" duration="14076000" />
+      <workItem from="1600356542465" duration="53000" />
+      <workItem from="1600356614670" duration="8423000" />
+      <workItem from="1600365247790" duration="942000" />
+      <workItem from="1600366283842" duration="6079000" />
+      <workItem from="1600421784299" duration="5545000" />
+      <workItem from="1600438422868" duration="18585000" />
+      <workItem from="1600508000104" duration="20046000" />
+      <workItem from="1600531599068" duration="22629000" />
+      <workItem from="1600588301358" duration="7280000" />
+      <workItem from="1600595607288" duration="45415000" />
+      <workItem from="1600643414167" duration="79000" />
+      <workItem from="1600675030965" duration="49066000" />
+      <workItem from="1600726119977" duration="16885000" />
+      <workItem from="1600767181023" duration="689000" />
+      <workItem from="1600768308186" duration="16693000" />
+      <workItem from="1600804037905" duration="3176000" />
+      <workItem from="1600849035852" duration="1160000" />
+      <workItem from="1600881284430" duration="2646000" />
+      <workItem from="1600943479324" duration="1811000" />
+      <workItem from="1600952152155" duration="4755000" />
+      <workItem from="1601013027713" duration="21652000" />
+      <workItem from="1601199821960" duration="33594000" />
+      <workItem from="1601237085184" duration="1311000" />
+      <workItem from="1601298954194" duration="779000" />
+      <workItem from="1601300316234" duration="28000" />
+      <workItem from="1601300535735" duration="1508000" />
+      <workItem from="1601401130994" duration="2538000" />
+      <workItem from="1601453843094" duration="1368000" />
+      <workItem from="1601482165597" duration="5466000" />
+      <workItem from="1601549750039" duration="4052000" />
+      <workItem from="1601563847491" duration="12120000" />
+      <workItem from="1601638546979" duration="21028000" />
+      <workItem from="1601710436108" duration="3029000" />
+      <workItem from="1601896255353" duration="1572000" />
+      <workItem from="1602004729161" duration="3585000" />
+      <workItem from="1602146384277" duration="2873000" />
+      <workItem from="1602154525823" duration="1826000" />
+      <workItem from="1602158416017" duration="2482000" />
+      <workItem from="1602170896099" duration="5872000" />
+      <workItem from="1602246474822" duration="32982000" />
+      <workItem from="1602320509486" duration="37708000" />
+      <workItem from="1602400097118" duration="4739000" />
+      <workItem from="1602418532032" duration="1104000" />
+      <workItem from="1602514219343" duration="6896000" />
+      <workItem from="1602592423003" duration="1860000" />
+      <workItem from="1602597089264" duration="1250000" />
+      <workItem from="1602604608575" duration="7021000" />
+      <workItem from="1602663573598" duration="12042000" />
+      <workItem from="1603174130075" duration="11873000" />
+    </task>
+    <task id="LOCAL-00001" summary="Fixed typos and added optimisation flags.&#10;&#10;Not sure if necessary though.">
+      <created>1599826362691</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599826362691</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added GCC warning flags.">
+      <created>1599990435141</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1599990435141</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Moved inlined to seperate directory.">
+      <created>1600167687687</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1600167687687</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Changed Cantina Common to header-only.">
+      <created>1600169100279</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600169100279</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added note (processed) and control (bypass) output.">
+      <created>1600278380861</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600278380861</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fixed midi timer update for pd and macro-ed namespaces.">
+      <created>1600372599234</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1600372599234</updated>
+    </task>
+    <task id="LOCAL-00007" summary="the fourth bamboozle.&#10;&#10;It's here.&#10;Actual clocks and event listeners for common, used in Pantoufle!&#10;Added a bitcrush external, but it sounds really bad.&#10;Other stuff, I think.&#10;Not much changed in Cantina proper, though.">
+      <created>1600742495538</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1600742495538</updated>
+    </task>
+    <task id="LOCAL-00008" summary="[Improvement]: Continued work on Physics engine, reformated code.">
+      <created>1603174560693</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1603174560693</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Improvement]: Updated gitignore, added gitattribute.">
+      <created>1603175679706</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1603175679706</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixed typos and added optimisation flags.&#10;&#10;Not sure if necessary though." />
+    <MESSAGE value="Added GCC warning flags." />
+    <MESSAGE value="Moved inlined to seperate directory." />
+    <MESSAGE value="Changed Cantina Common to header-only." />
+    <MESSAGE value="Added note (processed) and control (bypass) output." />
+    <MESSAGE value="Fixed midi timer update for pd and macro-ed namespaces." />
+    <MESSAGE value="the fourth bamboozle.&#10;&#10;It's here.&#10;Actual clocks and event listeners for common, used in Pantoufle!&#10;Added a bitcrush external, but it sounds really bad.&#10;Other stuff, I think.&#10;Not much changed in Cantina proper, though." />
+    <MESSAGE value="[Improvement]: Continued work on Physics engine, reformated code." />
+    <MESSAGE value="Improvement]: Updated gitignore, added gitattribute." />
+    <option name="LAST_COMMIT_MESSAGE" value="Improvement]: Updated gitignore, added gitattribute." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="446" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601650290230">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="444" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/58.27.1862.1053@58.27.1862.1053" timestamp="1601300650425" />
+    <state x="446" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/60.27.1860.1053@60.27.1860.1053" timestamp="1601650290230" />
+    <state x="446" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog/60.41.1860.1039@60.41.1860.1039" timestamp="1600679499664" />
+    <state x="448" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.27.1858.1053@62.27.1858.1053" timestamp="1598301708272" />
+    <state x="686" y="355" width="654" height="405" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603175123598">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="686" y="355" key="#com.intellij.fileTypes.FileTypeChooser/60.27.1860.1053@60.27.1860.1053" timestamp="1603175123598" />
+    <state x="686" y="365" width="654" height="405" key="#com.intellij.fileTypes.FileTypeChooser/60.41.1860.1039@60.41.1860.1039" timestamp="1600169270854" />
+    <state x="687" y="355" width="603" height="410" key="#com.intellij.fileTypes.FileTypeChooser/62.27.1858.1053@62.27.1858.1053" timestamp="1595883548190" />
+    <state x="924" y="222" width="760" height="471" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1600597924430">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state x="924" y="222" width="760" height="471" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/60.41.1860.1039@60.41.1860.1039" timestamp="1600597924430" />
+    <state x="768" y="264" width="426" height="593" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1601401430400">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="767" y="264" width="426" height="593" key="#com.intellij.ide.macro.MacrosDialog/58.27.1862.1053@58.27.1862.1053" timestamp="1601300639971" />
+    <state x="768" y="264" key="#com.intellij.ide.macro.MacrosDialog/60.27.1860.1053@60.27.1860.1053" timestamp="1601401430400" />
+    <state x="769" y="264" width="731" height="591" key="#com.intellij.ide.macro.MacrosDialog/62.27.1858.1053@62.27.1858.1053" timestamp="1596275837542" />
+    <state x="723" y="302" width="526" height="511" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602269344127">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="723" y="302" width="526" height="511" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/60.27.1860.1053@60.27.1860.1053" timestamp="1602269344127" />
+    <state x="723" y="312" width="526" height="511" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/60.41.1860.1039@60.41.1860.1039" timestamp="1600693257800" />
+    <state x="724" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/62.27.1858.1053@62.27.1858.1053" timestamp="1598031844243" />
+    <state x="661" y="567" key="#xdebugger.evaluate" timestamp="1600711654265">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state x="661" y="567" key="#xdebugger.evaluate/60.41.1860.1039@60.41.1860.1039" timestamp="1600711654265" />
+    <state x="717" y="405" width="538" height="303" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1596973808287">
+      <screen x="62" y="27" width="1858" height="1053" />
+    </state>
+    <state x="717" y="405" width="538" height="303" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/62.27.1858.1053@62.27.1858.1053" timestamp="1596973808287" />
+    <state x="340" y="27" width="1129" height="1039" key="CommitChangelistDialog2" timestamp="1603175679179">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="340" y="27" width="1129" height="1039" key="CommitChangelistDialog2/60.27.1860.1053@60.27.1860.1053" timestamp="1603175679179" />
+    <state x="528" y="107" width="914" height="913" key="CommitChangelistDialog2/60.41.1860.1039@60.41.1860.1039" timestamp="1600742494789" />
+    <state width="578" height="506" key="DebuggerActiveHint" timestamp="1600711390130">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state width="578" height="506" key="DebuggerActiveHint/60.41.1860.1039@60.41.1860.1039" timestamp="1600711390130" />
+    <state x="235" y="132" width="1490" height="870" key="DiffContextDialog" timestamp="1600277996051">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state x="235" y="132" width="1490" height="870" key="DiffContextDialog/60.41.1860.1039@60.41.1860.1039" timestamp="1600277996051" />
+    <state x="767" y="327" width="426" height="493" key="FileChooserDialogImpl" timestamp="1601300558556">
+      <screen x="58" y="27" width="1862" height="1053" />
+    </state>
+    <state x="767" y="327" key="FileChooserDialogImpl/58.27.1862.1053@58.27.1862.1053" timestamp="1601300558556" />
+    <state x="768" y="337" width="426" height="493" key="FileChooserDialogImpl/60.41.1860.1039@60.41.1860.1039" timestamp="1600446763305" />
+    <state x="769" y="327" width="424" height="491" key="FileChooserDialogImpl/62.27.1858.1053@62.27.1858.1053" timestamp="1596979536720" />
+    <state width="1251" height="400" key="GridCell.Tab.-1.bottom" timestamp="1600351515151">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state width="1251" height="400" key="GridCell.Tab.-1.bottom/60.41.1860.1039@60.41.1860.1039" timestamp="1600351515151" />
+    <state width="1251" height="400" key="GridCell.Tab.-1.center" timestamp="1600351515151">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state width="1251" height="400" key="GridCell.Tab.-1.center/60.41.1860.1039@60.41.1860.1039" timestamp="1600351515151" />
+    <state width="1251" height="400" key="GridCell.Tab.-1.left" timestamp="1600351515151">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state width="1251" height="400" key="GridCell.Tab.-1.left/60.41.1860.1039@60.41.1860.1039" timestamp="1600351515150" />
+    <state width="1251" height="400" key="GridCell.Tab.-1.right" timestamp="1600351515151">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state width="1251" height="400" key="GridCell.Tab.-1.right/60.41.1860.1039@60.41.1860.1039" timestamp="1600351515151" />
+    <state width="1812" height="112" key="GridCell.Tab.0.bottom" timestamp="1603188432275">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state width="1814" height="252" key="GridCell.Tab.0.bottom/58.27.1862.1053@58.27.1862.1053" timestamp="1601301440188" />
+    <state width="1812" height="112" key="GridCell.Tab.0.bottom/60.27.1860.1053@60.27.1860.1053" timestamp="1603188432275" />
+    <state width="1812" height="248" key="GridCell.Tab.0.bottom/60.41.1860.1039@60.41.1860.1039" timestamp="1601238395717" />
+    <state width="1810" height="104" key="GridCell.Tab.0.bottom/62.27.1858.1053@62.27.1858.1053" timestamp="1598992046473" />
+    <state width="1812" height="112" key="GridCell.Tab.0.center" timestamp="1603188432275">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state width="1814" height="252" key="GridCell.Tab.0.center/58.27.1862.1053@58.27.1862.1053" timestamp="1601301440187" />
+    <state width="1812" height="112" key="GridCell.Tab.0.center/60.27.1860.1053@60.27.1860.1053" timestamp="1603188432275" />
+    <state width="1812" height="248" key="GridCell.Tab.0.center/60.41.1860.1039@60.41.1860.1039" timestamp="1601238395716" />
+    <state width="1810" height="104" key="GridCell.Tab.0.center/62.27.1858.1053@62.27.1858.1053" timestamp="1598992046473" />
+    <state width="1812" height="112" key="GridCell.Tab.0.left" timestamp="1603188432274">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state width="1814" height="252" key="GridCell.Tab.0.left/58.27.1862.1053@58.27.1862.1053" timestamp="1601301440187" />
+    <state width="1812" height="112" key="GridCell.Tab.0.left/60.27.1860.1053@60.27.1860.1053" timestamp="1603188432274" />
+    <state width="1812" height="248" key="GridCell.Tab.0.left/60.41.1860.1039@60.41.1860.1039" timestamp="1601238395715" />
+    <state width="1810" height="104" key="GridCell.Tab.0.left/62.27.1858.1053@62.27.1858.1053" timestamp="1598992046473" />
+    <state width="1812" height="112" key="GridCell.Tab.0.right" timestamp="1603188432275">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state width="1814" height="252" key="GridCell.Tab.0.right/58.27.1862.1053@58.27.1862.1053" timestamp="1601301440188" />
+    <state width="1812" height="112" key="GridCell.Tab.0.right/60.27.1860.1053@60.27.1860.1053" timestamp="1603188432275" />
+    <state width="1812" height="248" key="GridCell.Tab.0.right/60.41.1860.1039@60.41.1860.1039" timestamp="1601238395716" />
+    <state width="1810" height="104" key="GridCell.Tab.0.right/62.27.1858.1053@62.27.1858.1053" timestamp="1598992046473" />
+    <state x="297" y="671" width="1812" height="112" key="GridCell.Tab.1.bottom" timestamp="1603188432276">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state width="1814" height="252" key="GridCell.Tab.1.bottom/58.27.1862.1053@58.27.1862.1053" timestamp="1601301439997" />
+    <state width="1812" height="112" key="GridCell.Tab.1.bottom/60.27.1860.1053@60.27.1860.1053" timestamp="1603188432276" />
+    <state x="297" y="671" width="1812" height="248" key="GridCell.Tab.1.bottom/60.41.1860.1039@60.41.1860.1039" timestamp="1601238395717" />
+    <state width="1810" height="438" key="GridCell.Tab.1.bottom/62.27.1858.1053@62.27.1858.1053" timestamp="1598097320046" />
+    <state x="297" y="671" width="1812" height="112" key="GridCell.Tab.1.center" timestamp="1603188432276">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state width="1814" height="252" key="GridCell.Tab.1.center/58.27.1862.1053@58.27.1862.1053" timestamp="1601301439997" />
+    <state width="1812" height="112" key="GridCell.Tab.1.center/60.27.1860.1053@60.27.1860.1053" timestamp="1603188432275" />
+    <state x="297" y="671" width="1812" height="248" key="GridCell.Tab.1.center/60.41.1860.1039@60.41.1860.1039" timestamp="1601238395717" />
+    <state width="1810" height="438" key="GridCell.Tab.1.center/62.27.1858.1053@62.27.1858.1053" timestamp="1598097320045" />
+    <state x="297" y="671" width="1812" height="112" key="GridCell.Tab.1.left" timestamp="1603188432275">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state width="1814" height="252" key="GridCell.Tab.1.left/58.27.1862.1053@58.27.1862.1053" timestamp="1601301439997" />
+    <state width="1812" height="112" key="GridCell.Tab.1.left/60.27.1860.1053@60.27.1860.1053" timestamp="1603188432275" />
+    <state x="297" y="671" width="1812" height="248" key="GridCell.Tab.1.left/60.41.1860.1039@60.41.1860.1039" timestamp="1601238395717" />
+    <state width="1810" height="438" key="GridCell.Tab.1.left/62.27.1858.1053@62.27.1858.1053" timestamp="1598097320045" />
+    <state x="297" y="671" width="1812" height="112" key="GridCell.Tab.1.right" timestamp="1603188432276">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state width="1814" height="252" key="GridCell.Tab.1.right/58.27.1862.1053@58.27.1862.1053" timestamp="1601301439997" />
+    <state width="1812" height="112" key="GridCell.Tab.1.right/60.27.1860.1053@60.27.1860.1053" timestamp="1603188432276" />
+    <state x="297" y="671" width="1812" height="248" key="GridCell.Tab.1.right/60.41.1860.1039@60.41.1860.1039" timestamp="1601238395717" />
+    <state width="1810" height="438" key="GridCell.Tab.1.right/62.27.1858.1053@62.27.1858.1053" timestamp="1598097320045" />
+    <state x="109" y="638" width="1222" height="372" key="GridCell.Tab.2.bottom" timestamp="1600360104488">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state x="109" y="638" width="1222" height="372" key="GridCell.Tab.2.bottom/60.41.1860.1039@60.41.1860.1039" timestamp="1600360104488" />
+    <state x="109" y="638" width="1222" height="372" key="GridCell.Tab.2.center" timestamp="1600360104487">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state x="109" y="638" width="1222" height="372" key="GridCell.Tab.2.center/60.41.1860.1039@60.41.1860.1039" timestamp="1600360104487" />
+    <state x="109" y="638" width="1222" height="372" key="GridCell.Tab.2.left" timestamp="1600360104487">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state x="109" y="638" width="1222" height="372" key="GridCell.Tab.2.left/60.41.1860.1039@60.41.1860.1039" timestamp="1600360104487" />
+    <state x="109" y="638" width="1222" height="372" key="GridCell.Tab.2.right" timestamp="1600360104487">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state x="109" y="638" width="1222" height="372" key="GridCell.Tab.2.right/60.41.1860.1039@60.41.1860.1039" timestamp="1600360104487" />
+    <state width="1222" height="372" key="GridCell.Tab.3.bottom" timestamp="1600360094710">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state width="1222" height="372" key="GridCell.Tab.3.bottom/60.41.1860.1039@60.41.1860.1039" timestamp="1600360094710" />
+    <state width="1222" height="372" key="GridCell.Tab.3.center" timestamp="1600360094710">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state width="1222" height="372" key="GridCell.Tab.3.center/60.41.1860.1039@60.41.1860.1039" timestamp="1600360094710" />
+    <state width="1222" height="372" key="GridCell.Tab.3.left" timestamp="1600360094710">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state width="1222" height="372" key="GridCell.Tab.3.left/60.41.1860.1039@60.41.1860.1039" timestamp="1600360094710" />
+    <state width="1222" height="372" key="GridCell.Tab.3.right" timestamp="1600360094710">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state width="1222" height="372" key="GridCell.Tab.3.right/60.41.1860.1039@60.41.1860.1039" timestamp="1600360094710" />
+    <state x="251" y="701" width="1222" height="372" key="GridCell.Tab.4.bottom" timestamp="1600360094711">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state x="251" y="701" width="1222" height="372" key="GridCell.Tab.4.bottom/60.41.1860.1039@60.41.1860.1039" timestamp="1600360094711" />
+    <state x="251" y="701" width="1222" height="372" key="GridCell.Tab.4.center" timestamp="1600360094711">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state x="251" y="701" width="1222" height="372" key="GridCell.Tab.4.center/60.41.1860.1039@60.41.1860.1039" timestamp="1600360094711" />
+    <state x="251" y="701" width="1222" height="372" key="GridCell.Tab.4.left" timestamp="1600360094710">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state x="251" y="701" width="1222" height="372" key="GridCell.Tab.4.left/60.41.1860.1039@60.41.1860.1039" timestamp="1600360094710" />
+    <state x="251" y="701" width="1222" height="372" key="GridCell.Tab.4.right" timestamp="1600360094711">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state x="251" y="701" width="1222" height="372" key="GridCell.Tab.4.right/60.41.1860.1039@60.41.1860.1039" timestamp="1600360094711" />
+    <state x="251" y="701" width="1222" height="372" key="GridCell.Tab.5.bottom" timestamp="1600360094712">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state x="251" y="701" width="1222" height="372" key="GridCell.Tab.5.bottom/60.41.1860.1039@60.41.1860.1039" timestamp="1600360094712" />
+    <state x="251" y="701" width="1222" height="372" key="GridCell.Tab.5.center" timestamp="1600360094711">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state x="251" y="701" width="1222" height="372" key="GridCell.Tab.5.center/60.41.1860.1039@60.41.1860.1039" timestamp="1600360094711" />
+    <state x="251" y="701" width="1222" height="372" key="GridCell.Tab.5.left" timestamp="1600360094711">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state x="251" y="701" width="1222" height="372" key="GridCell.Tab.5.left/60.41.1860.1039@60.41.1860.1039" timestamp="1600360094711" />
+    <state x="251" y="701" width="1222" height="372" key="GridCell.Tab.5.right" timestamp="1600360094711">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state x="251" y="701" width="1222" height="372" key="GridCell.Tab.5.right/60.41.1860.1039@60.41.1860.1039" timestamp="1600360094711" />
+    <state x="60" y="428" width="1222" height="372" key="GridCell.Tab.6.bottom" timestamp="1600360027846">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state x="60" y="428" width="1222" height="372" key="GridCell.Tab.6.bottom/60.41.1860.1039@60.41.1860.1039" timestamp="1600360027846" />
+    <state x="60" y="428" width="1222" height="372" key="GridCell.Tab.6.center" timestamp="1600360027846">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state x="60" y="428" width="1222" height="372" key="GridCell.Tab.6.center/60.41.1860.1039@60.41.1860.1039" timestamp="1600360027846" />
+    <state x="60" y="428" width="1222" height="372" key="GridCell.Tab.6.left" timestamp="1600360027845">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state x="60" y="428" width="1222" height="372" key="GridCell.Tab.6.left/60.41.1860.1039@60.41.1860.1039" timestamp="1600360027845" />
+    <state x="60" y="428" width="1222" height="372" key="GridCell.Tab.6.right" timestamp="1600360027846">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state x="60" y="428" width="1222" height="372" key="GridCell.Tab.6.right/60.41.1860.1039@60.41.1860.1039" timestamp="1600360027846" />
+    <state x="710" y="236" width="550" height="642" key="RollbackChangesDialog" timestamp="1602609273567">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="710" y="236" width="550" height="642" key="RollbackChangesDialog/60.27.1860.1053@60.27.1860.1053" timestamp="1602609273567" />
+    <state x="294" y="141" width="1361" height="737" key="SettingsEditor" timestamp="1603188457006">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="552" y="135" key="SettingsEditor/58.27.1862.1053@58.27.1862.1053" timestamp="1601300344355" />
+    <state x="294" y="141" width="1361" height="737" key="SettingsEditor/60.27.1860.1053@60.27.1860.1053" timestamp="1603188457006" />
+    <state x="553" y="148" width="1024" height="737" key="SettingsEditor/60.41.1860.1039@60.41.1860.1039" timestamp="1600523182437" />
+    <state x="480" y="188" width="1022" height="737" key="SettingsEditor/62.27.1858.1053@62.27.1858.1053" timestamp="1596974573276" />
+    <state x="584" y="284" width="802" height="537" key="Vcs.Push.Dialog.v2" timestamp="1603189573134">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="584" y="284" width="802" height="537" key="Vcs.Push.Dialog.v2/60.27.1860.1053@60.27.1860.1053" timestamp="1603189573134" />
+    <state x="584" y="295" width="802" height="537" key="Vcs.Push.Dialog.v2/60.41.1860.1039@60.41.1860.1039" timestamp="1600742507751" />
+    <state x="1050" y="240" width="594" height="646" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603174892763">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="1050" y="240" width="594" height="646" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/60.27.1860.1053@60.27.1860.1053" timestamp="1603174892763" />
+    <state x="1050" y="251" width="678" height="625" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/60.41.1860.1039@60.41.1860.1039" timestamp="1600719637718" />
+    <state x="771" y="468" width="430" height="179" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602521629987">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="771" y="468" width="430" height="179" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/60.27.1860.1053@60.27.1860.1053" timestamp="1602521629987" />
+    <state x="771" y="476" width="440" height="179" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/60.41.1860.1039@60.41.1860.1039" timestamp="1600742419711" />
+    <state x="772" y="468" width="428" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/62.27.1858.1053@62.27.1858.1053" timestamp="1596356410156" />
+    <state x="325" y="41" width="1265" height="655" key="dock-window-1" timestamp="1601201857133">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state x="325" y="41" width="1265" height="655" key="dock-window-1/60.41.1860.1039@60.41.1860.1039" timestamp="1601201857133" />
+    <state x="162" y="127" width="1658" height="853" key="dock-window-1/62.27.1858.1053@62.27.1858.1053" timestamp="1598037013901" />
+    <state x="84" y="635" width="1222" height="409" key="dock-window-2" timestamp="1600359954264">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state x="84" y="635" width="1222" height="409" key="dock-window-2/60.41.1860.1039@60.41.1860.1039" timestamp="1600359954264" />
+    <state x="297" y="722" width="1222" height="409" key="dock-window-3" timestamp="1600360386603">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state x="297" y="722" width="1222" height="409" key="dock-window-3/60.41.1860.1039@60.41.1860.1039" timestamp="1600360386603" />
+    <state x="297" y="671" width="1222" height="409" key="dock-window-4" timestamp="1600360386603">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state x="297" y="671" width="1222" height="409" key="dock-window-4/60.41.1860.1039@60.41.1860.1039" timestamp="1600360386603" />
+    <state x="251" y="701" width="1222" height="409" key="dock-window-5" timestamp="1600360386603">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state x="251" y="701" width="1222" height="409" key="dock-window-5/60.41.1860.1039@60.41.1860.1039" timestamp="1600360386603" />
+    <state x="109" y="638" width="1222" height="409" key="dock-window-6" timestamp="1600360386603">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state x="109" y="638" width="1222" height="409" key="dock-window-6/60.41.1860.1039@60.41.1860.1039" timestamp="1600360386603" />
+    <state x="681" y="302" width="619" height="580" key="find.popup" timestamp="1600639330124">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state x="681" y="302" width="619" height="580" key="find.popup/60.41.1860.1039@60.41.1860.1039" timestamp="1600639330124" />
+    <state x="682" y="292" width="618" height="580" key="find.popup/62.27.1858.1053@62.27.1858.1053" timestamp="1598094500852" />
+    <state x="732" y="431" width="984" height="535" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1596566951351">
+      <screen x="62" y="27" width="1858" height="1053" />
+    </state>
+    <state x="732" y="431" width="984" height="535" key="org.intellij.images.editor.actions.BackgroundImageDialog/62.27.1858.1053@62.27.1858.1053" timestamp="1596566951351" />
+    <state x="886" y="408" width="434" height="438" key="refactoring.ChangeSignatureDialog" timestamp="1601226989164">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state x="886" y="408" width="434" height="438" key="refactoring.ChangeSignatureDialog/60.41.1860.1039@60.41.1860.1039" timestamp="1601226989164" />
+    <state x="770" y="339" width="432" height="436" key="refactoring.ChangeSignatureDialog/62.27.1858.1053@62.27.1858.1053" timestamp="1598095228549" />
+    <state x="654" y="252" key="run.anything.popup" timestamp="1602272849535">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="653" y="252" width="673" height="687" key="run.anything.popup/58.27.1862.1053@58.27.1862.1053" timestamp="1601299005701" />
+    <state x="654" y="252" key="run.anything.popup/60.27.1860.1053@60.27.1860.1053" timestamp="1602272849535" />
+    <state x="654" y="263" width="672" height="677" key="run.anything.popup/60.41.1860.1039@60.41.1860.1039" timestamp="1600770884438" />
+    <state x="655" y="252" key="run.anything.popup/62.27.1858.1053@62.27.1858.1053" timestamp="1598037205924" />
+    <state x="653" y="259" width="673" height="678" key="search.everywhere.popup" timestamp="1603179154518">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="653" y="259" width="673" height="678" key="search.everywhere.popup/60.27.1860.1053@60.27.1860.1053" timestamp="1603179154518" />
+    <state x="653" y="270" width="673" height="669" key="search.everywhere.popup/60.41.1860.1039@60.41.1860.1039" timestamp="1600849166461" />
+    <state x="654" y="259" width="672" height="678" key="search.everywhere.popup/62.27.1858.1053@62.27.1858.1053" timestamp="1598972794850" />
+    <state x="714" y="474" width="542" height="181" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1600714816028">
+      <screen x="60" y="41" width="1860" height="1039" />
+    </state>
+    <state x="714" y="474" width="542" height="181" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/60.41.1860.1039@60.41.1860.1039" timestamp="1600714816028" />
+    <state x="715" y="466" width="542" height="181" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/62.27.1858.1053@62.27.1858.1053" timestamp="1598302188071" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/third-party/pure-data/src/m_pd.h</url>
+          <line>678</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
