@@ -1,9 +1,9 @@
+# piptouque
 
-# bin
-bin
-build
-cmake-build-debug
-cmake-build-release
+# output folders 
+cmake-build-debug/
+cmake-build-release/
+cmake-build-release-coverage/
 
 # from github/gitignore
 

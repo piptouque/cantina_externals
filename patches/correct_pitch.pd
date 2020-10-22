@@ -1,6 +1,0 @@
-#N canvas 57 96 450 300 10;
-#X obj 48 20 inlet;
-#X obj 48 181 outlet;
-#X obj 47 83 round_as_int;
-#X connect 0 0 2 0;
-#X connect 2 0 1 0;
