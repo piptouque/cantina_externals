@@ -5,9 +5,9 @@
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="cantina_tilde" targetName="soundtouch" />
       <config projectName="cantina_tilde" targetName="cantina" />
       <config projectName="cantina_tilde" targetName="cantina_tilde" />
+      <config projectName="cantina_tilde" targetName="soundtouch" />
       <config projectName="cantina_tilde" targetName="pantoufle" />
     </generated>
   </component>
@@ -20,42 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7d492f9-50fd-4f80-a51d-ee93e33e1bae" name="Default Changelist" comment="Improvement]:">
-      <change afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/patterns/Event.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/patterns/Event.inl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/timer/TimerUpdate.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina" beforeDir="false" afterPath="$PROJECT_DIR$/cantina" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/.clang-format" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/.clang-format" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/functor.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/functor.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/macro.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/macro.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/undef_macro.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/undef_macro.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/event/Listen.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/event/event.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/event/event_forward.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/event/Listen.inl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/ADSREnvelope.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/ADSREnvelope.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/ADSRState.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/ADSRState.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/FlatToneEnvelope.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/FlatToneEnvelope.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/MidiEnvelope.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/MidiEnvelope.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/note/MidiNoteInput.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/note/MidiNoteInput.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/processor/MidiEnvelopePair.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/processor/MidiEnvelopePair.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/timer/ChangeFlagUpdatable.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/timer/MidiTimer.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/timer/MidiTimer.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/timer/TimeUpdatable.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/timer/timer.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/inline/cant/pan/note/MidiNoteInput.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/inline/cant/pan/note/MidiNoteInput.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/Pantoufle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/Pantoufle.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/envelope/ADSREnvelope.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/envelope/ADSREnvelope.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/envelope/FlatToneEnvelope.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/envelope/FlatToneEnvelope.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/note/MidiNoteInput.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/note/MidiNoteInput.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/processor/MidiEnvelopePair.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/processor/MidiEnvelopePair.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/timer/ChangeFlagUpdatable.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/timer/MidiTimer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/timer/MidiTimer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/timer/TimeUpdatable.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/externals/cantina~.pd_linux" beforeDir="false" afterPath="$PROJECT_DIR$/externals/cantina~.pd_linux" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,19 +41,16 @@
         <option value="CMakeLists.txt" />
         <option value="C++ Source Cant" />
         <option value="C++ Source Pan" />
-        <option value="C++ Header Cant" />
         <option value="C++ Inline Cant" />
-        <option value="C++ Header Pan" />
         <option value="C++ Inline Pan" />
+        <option value="C++ Header Pan" />
+        <option value="C++ Header Cant" />
       </list>
     </option>
     <option name="SCHEME" value="Project" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/cantina/pantoufle" />
-  </component>
-  <component name="OCResolveContextSettings">
-    <option name="configuration" value="1-Debug-pantoufle" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/cantina" />
   </component>
   <component name="ProblemsViewState">
     <hideBySeverity>
@@ -103,7 +72,7 @@
     <property name="cf.advertisement.text.overridden" value="true" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="GitIgnore" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
@@ -286,6 +255,9 @@
       <workItem from="1603174130075" duration="15254000" />
       <workItem from="1603199423935" duration="34003000" />
       <workItem from="1603359950941" duration="687000" />
+      <workItem from="1603826648968" duration="8749000" />
+      <workItem from="1603835649421" duration="2056000" />
+      <workItem from="1603874987709" duration="1590000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed typos and added optimisation flags.&#10;&#10;Not sure if necessary though.">
       <created>1599826362691</created>
@@ -585,10 +557,10 @@
       <screen x="60" y="41" width="1860" height="1039" />
     </state>
     <state x="60" y="428" width="1222" height="372" key="GridCell.Tab.6.right/60.41.1860.1039@60.41.1860.1039" timestamp="1600360027846" />
-    <state x="710" y="236" width="550" height="642" key="RollbackChangesDialog" timestamp="1603189767816">
+    <state x="710" y="236" width="550" height="642" key="RollbackChangesDialog" timestamp="1603832724352">
       <screen x="60" y="27" width="1860" height="1053" />
     </state>
-    <state x="710" y="236" width="550" height="642" key="RollbackChangesDialog/60.27.1860.1053@60.27.1860.1053" timestamp="1603189767816" />
+    <state x="710" y="236" width="550" height="642" key="RollbackChangesDialog/60.27.1860.1053@60.27.1860.1053" timestamp="1603832724352" />
     <state x="294" y="141" width="1361" height="737" key="SettingsEditor" timestamp="1603188457006">
       <screen x="60" y="27" width="1860" height="1053" />
     </state>
@@ -646,10 +618,10 @@
       <screen x="62" y="27" width="1858" height="1053" />
     </state>
     <state x="732" y="431" width="984" height="535" key="org.intellij.images.editor.actions.BackgroundImageDialog/62.27.1858.1053@62.27.1858.1053" timestamp="1596566951351" />
-    <state x="886" y="399" width="327" height="438" key="refactoring.ChangeSignatureDialog" timestamp="1603212936290">
+    <state x="886" y="399" width="327" height="452" key="refactoring.ChangeSignatureDialog" timestamp="1603833481327">
       <screen x="60" y="27" width="1860" height="1053" />
     </state>
-    <state x="886" y="399" width="327" height="438" key="refactoring.ChangeSignatureDialog/60.27.1860.1053@60.27.1860.1053" timestamp="1603212936290" />
+    <state x="886" y="399" width="327" height="452" key="refactoring.ChangeSignatureDialog/60.27.1860.1053@60.27.1860.1053" timestamp="1603833481327" />
     <state x="886" y="408" width="434" height="438" key="refactoring.ChangeSignatureDialog/60.41.1860.1039@60.41.1860.1039" timestamp="1601226989164" />
     <state x="770" y="339" width="432" height="436" key="refactoring.ChangeSignatureDialog/62.27.1858.1053@62.27.1858.1053" timestamp="1598095228549" />
     <state x="654" y="252" key="run.anything.popup" timestamp="1603201748900">
@@ -659,10 +631,10 @@
     <state x="654" y="252" key="run.anything.popup/60.27.1860.1053@60.27.1860.1053" timestamp="1603201748900" />
     <state x="654" y="263" width="672" height="677" key="run.anything.popup/60.41.1860.1039@60.41.1860.1039" timestamp="1600770884438" />
     <state x="655" y="252" key="run.anything.popup/62.27.1858.1053@62.27.1858.1053" timestamp="1598037205924" />
-    <state x="653" y="259" width="673" height="678" key="search.everywhere.popup" timestamp="1603213188068">
+    <state x="653" y="259" width="673" height="678" key="search.everywhere.popup" timestamp="1603826866834">
       <screen x="60" y="27" width="1860" height="1053" />
     </state>
-    <state x="653" y="259" width="673" height="678" key="search.everywhere.popup/60.27.1860.1053@60.27.1860.1053" timestamp="1603213188068" />
+    <state x="653" y="259" width="673" height="678" key="search.everywhere.popup/60.27.1860.1053@60.27.1860.1053" timestamp="1603826866834" />
     <state x="653" y="270" width="673" height="669" key="search.everywhere.popup/60.41.1860.1039@60.41.1860.1039" timestamp="1600849166461" />
     <state x="654" y="259" width="672" height="678" key="search.everywhere.popup/62.27.1858.1053@62.27.1858.1053" timestamp="1598972794850" />
     <state x="714" y="474" width="542" height="181" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1600714816028">
@@ -678,6 +650,11 @@
           <url>file://$PROJECT_DIR$/third-party/pure-data/src/m_pd.h</url>
           <line>678</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/cantina/source/cant/Cantina.cpp</url>
+          <line>11</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

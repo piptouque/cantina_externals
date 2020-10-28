@@ -56,9 +56,6 @@ set(CANTINA_TILDE_FILES
         ${CANTINA_TILDE_SOURCE_DIR}/cantina~.cpp
         ${CANTINA_TILDE_INCLUDE_DIR}/cantina~.hpp
         ${CANTINA_TILDE_INCLUDE_DIR}/cant/impl.hpp
-
-
-
         ${CANTINA_FILES}
         )
 
