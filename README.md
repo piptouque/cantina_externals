@@ -9,8 +9,8 @@ Implementation of Cantina as a pure-data external. Currently my only reference f
 
 #### Dependencies 
 
-* pure-data 0.52 (included)
-* pd-build       (included)
+* pure-data 0.52 (submodule)
+* pd.build       (submodule)
 
 ### To do
 

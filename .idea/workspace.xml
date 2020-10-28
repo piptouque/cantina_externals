@@ -20,188 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7d492f9-50fd-4f80-a51d-ee93e33e1bae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/scopes/CantinaCommonSource.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/scopes/CantinaPdSource.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/scopes/CantinaSource.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/scopes/PantoufleSource.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina" beforeDir="false" afterPath="$PROJECT_DIR$/cantina" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/include/cant/cant.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/include/cant/cant.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/include/cant/cant_forward.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/include/cant/cant_forward.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/include/cant/extern/helmholtz/Helmholtz.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/include/cant/extern/helmholtz/Helmholtz.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/include/cant/fft/FFTWAllocator.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/include/cant/fft/FFTWAllocator.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/include/cant/fft/FFTWPerformer.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/include/cant/fft/FFTWPerformer.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/include/cant/fft/fft.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/include/cant/fft/fft.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/include/cant/shift/MixedDomainPitchShifter.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/include/cant/shift/MixedDomainPitchShifter.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/include/cant/shift/PitchShifter.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/include/cant/shift/PitchShifter.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/include/cant/shift/RubberTouchShifter.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/include/cant/shift/RubberTouchShifter.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/include/cant/shift/SoundTouchShifter.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/include/cant/shift/SoundTouchShifter.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/include/cant/shift/TimeDomainPitchShifter.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/include/cant/shift/TimeDomainPitchShifter.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/include/cant/shift/shift.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/include/cant/shift/shift.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/include/cant/track/HelmholtzTracker.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/include/cant/track/HelmholtzTracker.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/include/cant/track/PitchTracker.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/include/cant/track/PitchTracker.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/include/cant/track/track.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/include/cant/track/track.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/inline/cant/fft/FFTWAllocator.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/inline/cant/fft/FFTWAllocator.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/inline/cant/fft/FFTWPerformer.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/inline/cant/fft/FFTWPerformer.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/CantinaException.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/CantinaException.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/config.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/config.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/formatting.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/formatting.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/functor.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/functor.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/info.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/info.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/macro.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/macro.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/memory.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/memory.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/option.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/option.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/types.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/types.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/undef_macro.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/undef_macro.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/maths/algebra/Vector.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/maths/algebra/Vector.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/maths/algebra/algebra.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/maths/algebra/algebra.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/maths/approx.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/maths/approx.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/maths/geometry/Rectangle.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/maths/geometry/Rectangle.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/maths/geometry/geometry.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/maths/geometry/geometry.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/maths/interpolation/BrokenLinesInterpolation.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/maths/interpolation/BrokenLinesInterpolation.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/maths/interpolation/InterpolationOneD.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/maths/interpolation/InterpolationOneD.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/maths/interpolation/interpolation.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/maths/interpolation/interpolation.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/maths/maths.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/maths/maths.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/maths/polynomial/PackedPolynomial.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/maths/polynomial/PackedPolynomial.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/maths/polynomial/polynomial.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/maths/polynomial/polynomial.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/pan/common/PantoufleException.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/pan/common/PantoufleException.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/pan/common/types.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/pan/common/types.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/patterns/Event.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/patterns/Event.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/CollisionDetector.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/CollisionDetector.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/CollisionObject.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/CollisionObject.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/CollisionSolver.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/CollisionSolver.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/CustomForceField.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/CustomForceField.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/IsotropicPullField.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/IsotropicPullField.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/Kinetic.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/Kinetic.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/KineticObject.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/KineticObject.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/KineticState.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/KineticState.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/PhysicalAppliedForce.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/PhysicalAppliedForce.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/PhysicalCollider.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/PhysicalCollider.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/PhysicalCollision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/PhysicalCollision.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/PhysicalForce.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/PhysicalForce.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/PhysicalForceField.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/PhysicalForceField.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/PhysicalObject.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/PhysicalObject.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/PhysicalShape.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/PhysicalShape.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/PhysicalState.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/PhysicalState.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/PhysicsSimulation.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/PhysicsSimulation.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/Positionable.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/Positionable.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/RigidObject.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/physics/RigidObject.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/reka/common/types.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/reka/common/types.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/time/Clock.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/time/Clock.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/time/CustomExternalClock.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/time/CustomExternalClock.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/time/InternalClock.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/time/InternalClock.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/time/SystemExternalClock.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/time/SystemExternalClock.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/time/common/types.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/time/common/types.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/time/time.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/time/time.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/common/CantinaException.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/common/CantinaException.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/maths/algebra/Vector.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/maths/algebra/Vector.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/maths/approx.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/maths/approx.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/maths/geometry/Rectangle.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/maths/geometry/Rectangle.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/maths/interpolation/BrokenLinesInterpolation.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/maths/interpolation/BrokenLinesInterpolation.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/maths/interpolation/InterpolationOneD.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/maths/interpolation/InterpolationOneD.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/maths/polynomial/PackedPolynomial.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/maths/polynomial/PackedPolynomial.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/pan/common/PantoufleException.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/pan/common/PantoufleException.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/patterns/Event.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/patterns/Event.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/CollisionDetector.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/CollisionDetector.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/CollisionObject.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/CollisionObject.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/CollisionSolver.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/CollisionSolver.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/CustomForceField.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/CustomForceField.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/IsotropicPullField.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/IsotropicPullField.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/KineticObject.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/KineticObject.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/KineticState.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/KineticState.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/PhysicalAppliedForce.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/PhysicalAppliedForce.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/PhysicalCollider.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/PhysicalCollider.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/PhysicalCollision.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/PhysicalCollision.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/PhysicalForce.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/PhysicalForce.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/PhysicalForceField.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/PhysicalForceField.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/PhysicalObject.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/PhysicalObject.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/PhysicalShape.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/PhysicalShape.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/PhysicalState.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/PhysicalState.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/PhysicsSimulation.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/PhysicsSimulation.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/RigidObject.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/physics/RigidObject.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/time/Clock.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/time/Clock.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/time/CustomExternalClock.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/time/CustomExternalClock.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/time/InternalClock.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/time/InternalClock.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/time/SystemExternalClock.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/time/SystemExternalClock.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/Pantoufle.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/Pantoufle.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/control/MidiControlCompatible.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/control/MidiControlCompatible.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/control/MidiControlData.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/control/MidiControlData.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/control/control.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/control/control.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/control/control_forward.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/control/control_forward.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/controller/MidiController.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/controller/MidiController.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/controller/MidiDamper.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/controller/MidiDamper.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/controller/MidiPan.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/controller/MidiPan.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/controller/MidiWah.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/controller/MidiWah.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/controller/MultiMidiController.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/controller/MultiMidiController.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/controller/controller.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/controller/controller.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/ADSREnvelope.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/ADSREnvelope.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/ADSRState.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/ADSRState.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/FlatToneEnvelope.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/FlatToneEnvelope.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/MidiEnvelope.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/MidiEnvelope.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/adsr_forward.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/adsr_forward.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/envelope.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/envelope.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/layer/MidiNoteInputLayer.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/layer/MidiNoteInputLayer.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/layer/MidiNoteInputPoly.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/layer/MidiNoteInputPoly.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/layer/MidiNoteInternalLayer.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/layer/MidiNoteInternalLayer.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/layer/MidiNoteLayer.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/layer/MidiNoteLayer.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/layer/MidiNoteOutputLayer.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/layer/MidiNoteOutputLayer.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/layer/layer.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/layer/layer.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/note/MidiNote.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/note/MidiNote.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/note/MidiNoteCompatible.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/note/MidiNoteCompatible.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/note/MidiNoteData.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/note/MidiNoteData.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/note/MidiNoteInput.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/note/MidiNoteInput.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/note/MidiNoteInternalOutput.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/note/MidiNoteInternalOutput.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/note/note.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/note/note.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/note/note_forward.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/note/note_forward.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/pan.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/pan.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/pan_forward.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/pan_forward.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/processor/MidiControllerChain.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/processor/MidiControllerChain.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/processor/MidiEnvelopePair.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/processor/MidiEnvelopePair.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/processor/MidiProcessor.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/processor/MidiProcessor.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/processor/MidiProcessorMemory.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/processor/MidiProcessorMemory.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/processor/processor.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/processor/processor.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/timer/MidiTimer.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/timer/MidiTimer.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/timer/TimerUpdate.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/timer/TimerUpdate.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/inline/cant/pan/control/MidiControlData.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/inline/cant/pan/control/MidiControlData.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/inline/cant/pan/controller/MultiMidiController.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/inline/cant/pan/controller/MultiMidiController.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/inline/cant/pan/envelope/ADSRState.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/inline/cant/pan/envelope/ADSRState.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/inline/cant/pan/note/MidiNote.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/inline/cant/pan/note/MidiNote.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/inline/cant/pan/note/MidiNoteData.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/inline/cant/pan/note/MidiNoteData.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/inline/cant/pan/note/MidiNoteInput.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/inline/cant/pan/note/MidiNoteInput.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/inline/cant/pan/note/MidiNoteInternalOutput.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/inline/cant/pan/note/MidiNoteInternalOutput.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/inline/cant/pan/processor/MidiProcessorMemory.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/inline/cant/pan/processor/MidiProcessorMemory.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/Pantoufle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/Pantoufle.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/controller/MidiController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/controller/MidiController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/controller/MidiDamper.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/controller/MidiDamper.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/controller/MidiPan.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/controller/MidiPan.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/controller/MidiWah.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/controller/MidiWah.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/envelope/ADSREnvelope.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/envelope/ADSREnvelope.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/envelope/ADSRState.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/envelope/ADSRState.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/envelope/FlatToneEnvelope.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/envelope/FlatToneEnvelope.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/envelope/MidiEnvelope.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/envelope/MidiEnvelope.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/layer/MidiNoteInputLayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/layer/MidiNoteInputLayer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/layer/MidiNoteInputPoly.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/layer/MidiNoteInputPoly.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/layer/MidiNoteInternalLayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/layer/MidiNoteInternalLayer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/layer/MidiNoteOutputLayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/layer/MidiNoteOutputLayer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/note/MidiNoteData.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/note/MidiNoteData.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/note/MidiNoteInput.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/note/MidiNoteInput.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/note/MidiNoteInternalOutput.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/note/MidiNoteInternalOutput.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/processor/MidiControllerChain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/processor/MidiControllerChain.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/processor/MidiEnvelopePair.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/processor/MidiEnvelopePair.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/timer/MidiTimer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/timer/MidiTimer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/source/cant/Cantina.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/source/cant/Cantina.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/source/cant/extern/helmholtz/Helmholtz.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/source/cant/extern/helmholtz/Helmholtz.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/source/cant/fft/FFTWPerformer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/source/cant/fft/FFTWPerformer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/source/cant/shift/MixedDomainPitchShifter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/source/cant/shift/MixedDomainPitchShifter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/source/cant/shift/PitchShifter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/source/cant/shift/PitchShifter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/source/cant/shift/RubberTouchShifter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/source/cant/shift/RubberTouchShifter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/source/cant/shift/SoundTouchShifter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/source/cant/shift/SoundTouchShifter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/source/cant/shift/TimeDomainPitchShifter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/source/cant/shift/TimeDomainPitchShifter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/source/cant/track/HelmholtzTracker.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/source/cant/track/HelmholtzTracker.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/bitcrush~.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/bitcrush~.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/cantina~.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/cantina~.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +46,7 @@
     <option name="SCHEME" value="Project" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/cantina/pantoufle" />
   </component>
   <component name="NamedScopeManager">
     <order>
@@ -445,7 +267,7 @@
       <workItem from="1603359950941" duration="687000" />
       <workItem from="1603826648968" duration="8749000" />
       <workItem from="1603835649421" duration="2056000" />
-      <workItem from="1603874987709" duration="5972000" />
+      <workItem from="1603874987709" duration="6248000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed typos and added optimisation flags.&#10;&#10;Not sure if necessary though.">
       <created>1599826362691</created>
@@ -774,10 +596,10 @@
     <state x="294" y="141" width="1361" height="737" key="SettingsEditor/60.27.1860.1053@60.27.1860.1053" timestamp="1603188457006" />
     <state x="553" y="148" width="1024" height="737" key="SettingsEditor/60.41.1860.1039@60.41.1860.1039" timestamp="1600523182437" />
     <state x="480" y="188" width="1022" height="737" key="SettingsEditor/62.27.1858.1053@62.27.1858.1053" timestamp="1596974573276" />
-    <state x="584" y="284" width="802" height="533" key="Vcs.Push.Dialog.v2" timestamp="1603885036361">
+    <state x="584" y="284" width="802" height="533" key="Vcs.Push.Dialog.v2" timestamp="1603885679665">
       <screen x="60" y="27" width="1860" height="1053" />
     </state>
-    <state x="584" y="284" width="802" height="533" key="Vcs.Push.Dialog.v2/60.27.1860.1053@60.27.1860.1053" timestamp="1603885036361" />
+    <state x="584" y="284" width="802" height="533" key="Vcs.Push.Dialog.v2/60.27.1860.1053@60.27.1860.1053" timestamp="1603885679665" />
     <state x="584" y="295" width="802" height="537" key="Vcs.Push.Dialog.v2/60.41.1860.1039@60.41.1860.1039" timestamp="1600742507751" />
     <state x="1050" y="240" width="594" height="646" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603883766132">
       <screen x="60" y="27" width="1860" height="1053" />
