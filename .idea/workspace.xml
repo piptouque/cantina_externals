@@ -5,10 +5,10 @@
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="cantina_tilde" targetName="cantina" />
+      <config projectName="cantina_tilde" targetName="pantoufle" />
       <config projectName="cantina_tilde" targetName="cantina_tilde" />
       <config projectName="cantina_tilde" targetName="soundtouch" />
-      <config projectName="cantina_tilde" targetName="pantoufle" />
+      <config projectName="cantina_tilde" targetName="cantina" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -19,14 +19,21 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7d492f9-50fd-4f80-a51d-ee93e33e1bae" name="Default Changelist" comment="Improvement]:">
+    <list default="true" id="c7d492f9-50fd-4f80-a51d-ee93e33e1bae" name="Default Changelist" comment="[Improvement]: Fixed typos and added more information to Readme's.&#10;&#10;Also updated .gitmodules.">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina" beforeDir="false" afterPath="$PROJECT_DIR$/cantina" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/.gitmodules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/pantoufle" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/.gitmodules" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina/pantoufle/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/patterns/Event.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/patterns/Event.inl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/externals/cantina~.pd_linux" beforeDir="false" afterPath="$PROJECT_DIR$/externals/cantina~.pd_linux" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +57,7 @@
     <option name="SCHEME" value="Project" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/cantina" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProblemsViewState">
     <hideBySeverity>
@@ -72,7 +79,7 @@
     <property name="cf.advertisement.text.overridden" value="true" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="GitIgnore" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../eureka" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
@@ -94,6 +101,11 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.cantina_tilde">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="bitcrush_tilde" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$ContentRoot$/patches/test_it/test_bitcrush.pd" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cantina_tilde" TARGET_NAME="bitcrush_tilde" CONFIG_NAME="Release" RUN_PATH="$USER_HOME$/pd-502/bin/pd">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -257,7 +269,7 @@
       <workItem from="1603359950941" duration="687000" />
       <workItem from="1603826648968" duration="8749000" />
       <workItem from="1603835649421" duration="2056000" />
-      <workItem from="1603874987709" duration="1590000" />
+      <workItem from="1603874987709" duration="4564000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed typos and added optimisation flags.&#10;&#10;Not sure if necessary though.">
       <created>1599826362691</created>
@@ -329,13 +341,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603189877399</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="[Improvement]: Added additional informations to Readme's.">
+      <created>1603876649360</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1603876649360</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Fixed typos and added optimisation flags.&#10;&#10;Not sure if necessary though." />
     <MESSAGE value="Added GCC warning flags." />
     <MESSAGE value="Moved inlined to seperate directory." />
@@ -346,7 +366,8 @@
     <MESSAGE value="[Improvement]: Continued work on Physics engine, reformated code." />
     <MESSAGE value="Improvement]: Updated gitignore, added gitattribute." />
     <MESSAGE value="[Fix]: Added clang-format and some missing files." />
-    <option name="LAST_COMMIT_MESSAGE" value="[Fix]: Added clang-format and some missing files." />
+    <MESSAGE value="[Improvement]: Added additional informations to Readme's." />
+    <option name="LAST_COMMIT_MESSAGE" value="[Improvement]: Added additional informations to Readme's." />
   </component>
   <component name="WindowStateProjectService">
     <state x="446" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601650290230">
@@ -386,10 +407,10 @@
       <screen x="62" y="27" width="1858" height="1053" />
     </state>
     <state x="717" y="405" width="538" height="303" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/62.27.1858.1053@62.27.1858.1053" timestamp="1596973808287" />
-    <state x="340" y="27" width="1129" height="1039" key="CommitChangelistDialog2" timestamp="1603190092839">
+    <state x="340" y="27" width="1129" height="1039" key="CommitChangelistDialog2" timestamp="1603884098501">
       <screen x="60" y="27" width="1860" height="1053" />
     </state>
-    <state x="340" y="27" width="1129" height="1039" key="CommitChangelistDialog2/60.27.1860.1053@60.27.1860.1053" timestamp="1603190092839" />
+    <state x="340" y="27" width="1129" height="1039" key="CommitChangelistDialog2/60.27.1860.1053@60.27.1860.1053" timestamp="1603884098501" />
     <state x="528" y="107" width="914" height="913" key="CommitChangelistDialog2/60.41.1860.1039@60.41.1860.1039" timestamp="1600742494789" />
     <state width="578" height="506" key="DebuggerActiveHint" timestamp="1600711390130">
       <screen x="60" y="41" width="1860" height="1039" />
@@ -399,10 +420,11 @@
       <screen x="60" y="41" width="1860" height="1039" />
     </state>
     <state x="235" y="132" width="1490" height="870" key="DiffContextDialog/60.41.1860.1039@60.41.1860.1039" timestamp="1600277996051" />
-    <state x="767" y="327" width="426" height="493" key="FileChooserDialogImpl" timestamp="1601300558556">
-      <screen x="58" y="27" width="1862" height="1053" />
+    <state x="768" y="327" width="426" height="493" key="FileChooserDialogImpl" timestamp="1603876672538">
+      <screen x="60" y="27" width="1860" height="1053" />
     </state>
     <state x="767" y="327" key="FileChooserDialogImpl/58.27.1862.1053@58.27.1862.1053" timestamp="1601300558556" />
+    <state x="768" y="327" key="FileChooserDialogImpl/60.27.1860.1053@60.27.1860.1053" timestamp="1603876672538" />
     <state x="768" y="337" width="426" height="493" key="FileChooserDialogImpl/60.41.1860.1039@60.41.1860.1039" timestamp="1600446763305" />
     <state x="769" y="327" width="424" height="491" key="FileChooserDialogImpl/62.27.1858.1053@62.27.1858.1053" timestamp="1596979536720" />
     <state width="1251" height="400" key="GridCell.Tab.-1.bottom" timestamp="1600351515151">
@@ -568,15 +590,15 @@
     <state x="294" y="141" width="1361" height="737" key="SettingsEditor/60.27.1860.1053@60.27.1860.1053" timestamp="1603188457006" />
     <state x="553" y="148" width="1024" height="737" key="SettingsEditor/60.41.1860.1039@60.41.1860.1039" timestamp="1600523182437" />
     <state x="480" y="188" width="1022" height="737" key="SettingsEditor/62.27.1858.1053@62.27.1858.1053" timestamp="1596974573276" />
-    <state x="584" y="284" width="802" height="537" key="Vcs.Push.Dialog.v2" timestamp="1603189891563">
+    <state x="584" y="284" width="802" height="533" key="Vcs.Push.Dialog.v2" timestamp="1603877867975">
       <screen x="60" y="27" width="1860" height="1053" />
     </state>
-    <state x="584" y="284" width="802" height="537" key="Vcs.Push.Dialog.v2/60.27.1860.1053@60.27.1860.1053" timestamp="1603189891563" />
+    <state x="584" y="284" width="802" height="533" key="Vcs.Push.Dialog.v2/60.27.1860.1053@60.27.1860.1053" timestamp="1603877867975" />
     <state x="584" y="295" width="802" height="537" key="Vcs.Push.Dialog.v2/60.41.1860.1039@60.41.1860.1039" timestamp="1600742507751" />
-    <state x="1050" y="240" width="594" height="646" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603234887717">
+    <state x="1050" y="240" width="594" height="646" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603883766132">
       <screen x="60" y="27" width="1860" height="1053" />
     </state>
-    <state x="1050" y="240" width="594" height="646" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/60.27.1860.1053@60.27.1860.1053" timestamp="1603234887717" />
+    <state x="1050" y="240" width="594" height="646" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/60.27.1860.1053@60.27.1860.1053" timestamp="1603883766132" />
     <state x="1050" y="251" width="678" height="625" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/60.41.1860.1039@60.41.1860.1039" timestamp="1600719637718" />
     <state x="771" y="468" width="430" height="179" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602521629987">
       <screen x="60" y="27" width="1860" height="1053" />

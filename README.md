@@ -3,7 +3,7 @@
 
 ### Info
 
-Implementation of Cantina as a pure-data external. Currently my only reference for testing.
+Implementation of Cantina as a pure-data external. Currently my only reference for testing purposes.
 
 ### Build 
 
@@ -16,7 +16,7 @@ Implementation of Cantina as a pure-data external. Currently my only reference f
 
 #### Features 
 
-- [ ] Implement C#-style properties. (template, overload = etc.)
+- [ ] Implement C#-style properties. (template, overload operator= etc.)
 - [ ] Implement Slider (and SliderProperty as a convenience?)
 - [ ] Update Pantoufle.
 
