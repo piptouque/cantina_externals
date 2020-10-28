@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="CantinaSource" pattern="file[cantina_externals]:cantina//*&amp;&amp;!file[cantina_externals]:cantina/third-party_proxy//*" />
+</component>

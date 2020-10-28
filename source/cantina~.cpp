@@ -301,10 +301,6 @@ void cantina_tilde_controls(t_cantina_tilde *x, t_symbol *, int argc,
    * -- It's because of the [ctlin], I think the output bang from right to left,
    * -- so when I switch the order, when inputting them to the [pack],
    * -- The hot inlet bangs first and sends the oudated control.
-   * I found out when using the pedal, which goes from 0 to 127 and back again,
-   * and that would be more of problem than, say, which the 'potards'.
-   * So I'll just switch value first and controller id second, then.
-   * Awesome!
    */
   const auto value = static_cast<cant::pan::id_u8>(atom_getfloat(argv));
   const auto controllerId =
