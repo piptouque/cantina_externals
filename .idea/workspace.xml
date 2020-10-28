@@ -20,21 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7d492f9-50fd-4f80-a51d-ee93e33e1bae" name="Default Changelist" comment="[Improvement]: Fixed typos and added more information to Readme's.&#10;&#10;Also updated .gitmodules.">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina" beforeDir="false" afterPath="$PROJECT_DIR$/cantina" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/.gitmodules" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/.gitmodules" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/patterns/Event.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/patterns/Event.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/externals/cantina~.pd_linux" beforeDir="false" afterPath="$PROJECT_DIR$/externals/cantina~.pd_linux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/include/cant/Cantina.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/include/cant/Cantina.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/control/MidiControlData.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/control/MidiControlData.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/source/cant/Cantina.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/source/cant/Cantina.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/cant/impl.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/cant/impl.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/cantina~.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/cantina~.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/cantina~.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/cantina~.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +49,7 @@
     <option name="SCHEME" value="Project" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/cantina/pantoufle/cantina_common" />
   </component>
   <component name="ProblemsViewState">
     <hideBySeverity>
@@ -269,7 +261,7 @@
       <workItem from="1603359950941" duration="687000" />
       <workItem from="1603826648968" duration="8749000" />
       <workItem from="1603835649421" duration="2056000" />
-      <workItem from="1603874987709" duration="4564000" />
+      <workItem from="1603874987709" duration="5348000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed typos and added optimisation flags.&#10;&#10;Not sure if necessary though.">
       <created>1599826362691</created>
@@ -377,10 +369,10 @@
     <state x="446" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/60.27.1860.1053@60.27.1860.1053" timestamp="1601650290230" />
     <state x="446" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog/60.41.1860.1039@60.41.1860.1039" timestamp="1600679499664" />
     <state x="448" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.27.1858.1053@62.27.1858.1053" timestamp="1598301708272" />
-    <state x="686" y="355" width="654" height="405" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603175123598">
+    <state x="686" y="355" width="654" height="405" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603884133505">
       <screen x="60" y="27" width="1860" height="1053" />
     </state>
-    <state x="686" y="355" key="#com.intellij.fileTypes.FileTypeChooser/60.27.1860.1053@60.27.1860.1053" timestamp="1603175123598" />
+    <state x="686" y="355" width="654" height="405" key="#com.intellij.fileTypes.FileTypeChooser/60.27.1860.1053@60.27.1860.1053" timestamp="1603884133505" />
     <state x="686" y="365" width="654" height="405" key="#com.intellij.fileTypes.FileTypeChooser/60.41.1860.1039@60.41.1860.1039" timestamp="1600169270854" />
     <state x="687" y="355" width="603" height="410" key="#com.intellij.fileTypes.FileTypeChooser/62.27.1858.1053@62.27.1858.1053" timestamp="1595883548190" />
     <state x="924" y="222" width="760" height="471" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1600597924430">
@@ -407,10 +399,10 @@
       <screen x="62" y="27" width="1858" height="1053" />
     </state>
     <state x="717" y="405" width="538" height="303" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/62.27.1858.1053@62.27.1858.1053" timestamp="1596973808287" />
-    <state x="340" y="27" width="1129" height="1039" key="CommitChangelistDialog2" timestamp="1603884098501">
+    <state x="340" y="27" width="1129" height="1039" key="CommitChangelistDialog2" timestamp="1603884201542">
       <screen x="60" y="27" width="1860" height="1053" />
     </state>
-    <state x="340" y="27" width="1129" height="1039" key="CommitChangelistDialog2/60.27.1860.1053@60.27.1860.1053" timestamp="1603884098501" />
+    <state x="340" y="27" width="1129" height="1039" key="CommitChangelistDialog2/60.27.1860.1053@60.27.1860.1053" timestamp="1603884201542" />
     <state x="528" y="107" width="914" height="913" key="CommitChangelistDialog2/60.41.1860.1039@60.41.1860.1039" timestamp="1600742494789" />
     <state width="578" height="506" key="DebuggerActiveHint" timestamp="1600711390130">
       <screen x="60" y="41" width="1860" height="1039" />
@@ -590,10 +582,10 @@
     <state x="294" y="141" width="1361" height="737" key="SettingsEditor/60.27.1860.1053@60.27.1860.1053" timestamp="1603188457006" />
     <state x="553" y="148" width="1024" height="737" key="SettingsEditor/60.41.1860.1039@60.41.1860.1039" timestamp="1600523182437" />
     <state x="480" y="188" width="1022" height="737" key="SettingsEditor/62.27.1858.1053@62.27.1858.1053" timestamp="1596974573276" />
-    <state x="584" y="284" width="802" height="533" key="Vcs.Push.Dialog.v2" timestamp="1603877867975">
+    <state x="584" y="284" width="802" height="533" key="Vcs.Push.Dialog.v2" timestamp="1603884390588">
       <screen x="60" y="27" width="1860" height="1053" />
     </state>
-    <state x="584" y="284" width="802" height="533" key="Vcs.Push.Dialog.v2/60.27.1860.1053@60.27.1860.1053" timestamp="1603877867975" />
+    <state x="584" y="284" width="802" height="533" key="Vcs.Push.Dialog.v2/60.27.1860.1053@60.27.1860.1053" timestamp="1603884390588" />
     <state x="584" y="295" width="802" height="537" key="Vcs.Push.Dialog.v2/60.41.1860.1039@60.41.1860.1039" timestamp="1600742507751" />
     <state x="1050" y="240" width="594" height="646" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603883766132">
       <screen x="60" y="27" width="1860" height="1053" />
@@ -672,11 +664,6 @@
           <url>file://$PROJECT_DIR$/third-party/pure-data/src/m_pd.h</url>
           <line>678</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/cantina/source/cant/Cantina.cpp</url>
-          <line>11</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

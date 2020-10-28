@@ -8,9 +8,6 @@
 #pragma once
 
 
-#include <cant/impl.hpp>
-#include <cant/cant.hpp>
-#include <cant/common/CantinaException.hpp>
 
 extern "C" void cantina_tilde_setup(void);
 

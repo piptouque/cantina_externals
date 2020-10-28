@@ -12,5 +12,6 @@ extern "C" {
 }
 
 #include <cant/common/types.hpp>
+#include <cant/common/info.hpp>
 
 #endif //CANTINA_IMPL_HPP
