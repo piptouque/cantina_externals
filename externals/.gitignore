@@ -1,7 +1,9 @@
 
 
 # Externals (shared libraries)
-
-*.pd_linux    # linux
-*.pd_darwin   # mac
-*.dll         # windows
+# linux
+*.pd_linux
+# mac
+*.pd_darwin
+# windows
+*.dll
