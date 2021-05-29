@@ -1,6 +1,7 @@
 # piptouque
 
 # build folders
+build/
 cmake-build-debug/
 cmake-build-release/
 cmake-build-release-coverage/
