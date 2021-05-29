@@ -1,7 +1,6 @@
-cmake_minimum_required(VERSION 3.6)
+cmake_minimum_required(VERSION 3.12)
 
 project(cantina_tilde)
-
 
 # see: https://cmake.org/cmake/help/v2.9/manual/cmake-variables.7.html
 message("CMAKE_VERSION          : " ${CMAKE_VERSION})
@@ -24,19 +23,9 @@ message("PROJECT_SOURCE_DIR     : " ${PROJECT_SOURCE_DIR})
 message("PROJECT_LIB_DIR        : " ${PROJECT_LIB_DIR})
 message("GIT_SUBMODULE_DIR:    : " ${GIT_SUBMODULE_DIR})
 
-
-
-#cantina
+# cantina
 set(CANTINA_DIR ${PROJECT_SOURCE_DIR}/cantina)
 add_subdirectory(${CANTINA_DIR})
-
-set(CMAKE_CXX_STANDARD ${CANTINA_CXX_STANDARD})
-set(CMAKE_CXX_FLAGS ${CANTINA_TILDE_CXX_FLAGS})
-
-include_directories(
-        ${CANTINA_TILDE_INCLUDE_DIR}
-        ${CANTINA_INCLUDE_DIRS}
-)
 
 # variable used in pd.build
 set(PD_DIR ${GIT_SUBMODULE_DIR}/pure-data)
@@ -69,10 +58,13 @@ set(DECIMATE_TILDE_FILES
         ${CANTINA_TILDE_SOURCE_DIR}/decimate~.h
         )
 
-add_pd_external(cantina_tilde cantina~ ${CANTINA_TILDE_FILES})
+add_pd_external(${PROJECT_NAME} cantina~ ${CANTINA_TILDE_FILES})
 # add_pd_external(bitcrush_tilde bitcrush~ ${BITCRUSH_TILDE_FILES})
 
-# LINKIN'
-target_link_libraries(cantina_tilde
-        ${CANTINA_LIBRARIES}
+target_compile_options(${PROJECT_NAME} PUBLIC ${CANTINA_CXX_FLAGS}
         )
+target_compile_features(${PROJECT_NAME} PUBLIC ${CANTINA_CXX_STANDARD})
+
+# LINKIN'
+target_link_libraries(${PROJECT_NAME} ${CANTINA_LIBRARIES})
+target_include_directories(${PROJECT_NAME} PRIVATE ${CANTINA_TILDE_INCLUDE_DIR})

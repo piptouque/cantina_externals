@@ -5,6 +5,7 @@
     <mapping directory="$PROJECT_DIR$/cantina" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/cantina/pantoufle" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/cantina/pantoufle/cantina_common" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cantina/pantoufle/cantina_common/modules" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/cantina/pantoufle/cantina_common/third-party/fmt" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/cantina/third-party/rubber-band" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/cantina/third-party/soundtouch" vcs="Git" />
