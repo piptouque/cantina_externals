@@ -12,6 +12,7 @@
 
 #include <cant/Cantina.hpp>
 #include <cant/pan/control/control.hpp>
+#include <cant/pan/envelope/envelope.hpp>
 #include <cant/pan/note/note.hpp>
 
 #include <cant/common/CantinaException.hpp>
@@ -242,18 +243,38 @@ void cantina_tilde_dsp(t_cantina_tilde *x, t_signal **sp) {
            x->x_vec_dspargs.data());
 }
 
-void cantina_tilde_envelope(t_symbol *, int argc, t_atom *argv) {
+void cantina_tilde_envelope(t_cantina_tilde *x, t_symbol *, int argc,
+                            t_atom *argv) {
   /* todo */
-  char type[20];
-  switch (argc) {
-  case 0:
+  if (!argv) {
     post("cantina~: MidiEnvelope method not set.");
     return;
-  case 1:
-    atom_string(argv + 1, type, 20);
-    post(type);
-  default:
-    break;
+  }
+  // get envelope type
+  std::string type;
+  type.reserve(20);
+  atom_string(argv + 1, type.data(), 20);
+  if (type == "adsr") {
+    if (argc < 2) {
+      post("cantina~: not enough arguments for envelope %s, "
+           "need: damper controller id.",
+           type.data());
+    }
+    // make adsr envelope
+    auto adsr = cant::pan::ADSREnvelope::make(x->cantina->getNumberHarmonics());
+
+    // make damper
+    const auto controllerId =
+        static_cast<cant::pan::id_u8>(atom_getint(argv + 2));
+    const auto channel = static_cast<cant::pan::id_u8>(atom_getint(argv + 3));
+    auto damper = cant::pan::MidiDamper::make(channel, controllerId);
+
+    // link the two
+    adsr->setController(std::move(damper));
+    x->cantina->addEnvelope(std::move(adsr));
+  } else {
+    post("cantina~: envelope %s not known.", type.data());
+    return;
   }
 }
 
@@ -319,26 +340,6 @@ void cantina_tilde_controls(t_cantina_tilde *x, t_symbol *, int argc,
   outlet_list(x->x_out_controls, &s_list, 3, x->x_a_control);
 }
 
-void cantina_tilde_controllers(t_cantina_tilde *x, t_symbol *, int argc,
-                               t_atom *argv) {
-  if (argc < 3) {
-    post("cantina~: Wrong format for controller definition: expected [type, "
-         "controller id, channel]");
-    return;
-  }
-  char buf[20];
-  atom_string(argv, buf, 20);
-  const auto type = std::string(buf);
-  const auto controllerId =
-      static_cast<cant::pan::id_u8>(atom_getint(argv + 1));
-  const auto channel = static_cast<cant::pan::id_u8>(atom_getint(argv + 2));
-  try {
-    x->cantina->setController(type, channel, {controllerId});
-  } catch (const cant::CantinaException &e) {
-    std::cerr << e.what() << std::endl;
-  }
-}
-
 extern "C" void cantina_tilde_setup(void) {
   cantina_tilde_class =
       class_new(gensym("cantina~"),
@@ -362,9 +363,6 @@ extern "C" void cantina_tilde_setup(void) {
   class_addmethod(cantina_tilde_class,
                   reinterpret_cast<t_method>(cantina_tilde_controls),
                   gensym("controls"), A_GIMME, 0);
-  class_addmethod(cantina_tilde_class,
-                  reinterpret_cast<t_method>(cantina_tilde_controllers),
-                  gensym("controller"), A_GIMME, 0);
   CLASS_MAINSIGNALIN(cantina_tilde_class, t_cantina_tilde, f);
   post("Cant version : %s", cant::CANTINA_VERSION);
   post("Cant brew    : %s", cant::CANTINA_BREW);

@@ -20,7 +20,6 @@ message("CMAKE_SOURCE_DIR       : " ${CMAKE_SOURCE_DIR})
 message("CMAKE_HOME_DIRECTORY   : " ${CMAKE_HOME_DIRECTORY})
 message("PROJECT_BINARY_DIR     : " ${PROJECT_BINARY_DIR})
 message("PROJECT_SOURCE_DIR     : " ${PROJECT_SOURCE_DIR})
-message("PROJECT_LIB_DIR        : " ${PROJECT_LIB_DIR})
 message("GIT_SUBMODULE_DIR:    : " ${GIT_SUBMODULE_DIR})
 
 # cantina
@@ -61,10 +60,11 @@ set(DECIMATE_TILDE_FILES
 add_pd_external(${PROJECT_NAME} cantina~ ${CANTINA_TILDE_FILES})
 # add_pd_external(bitcrush_tilde bitcrush~ ${BITCRUSH_TILDE_FILES})
 
-target_compile_options(${PROJECT_NAME} PUBLIC ${CANTINA_CXX_FLAGS}
-        )
+# no special flags for this one, since it's mess.
+# target_compile_options(${PROJECT_NAME} PUBLIC ${CANTINA_CXX_FLAGS})
+
 target_compile_features(${PROJECT_NAME} PUBLIC ${CANTINA_CXX_STANDARD})
 
-# LINKIN'
-target_link_libraries(${PROJECT_NAME} ${CANTINA_LIBRARIES})
+target_link_libraries(${PROJECT_NAME} PUBLIC ${CANTINA_LIBRARIES})
+
 target_include_directories(${PROJECT_NAME} PRIVATE ${CANTINA_TILDE_INCLUDE_DIR})
