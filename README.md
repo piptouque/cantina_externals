@@ -7,7 +7,7 @@ Implementation of Cantina as a pure-data external. Currently my only reference f
 
 ### Build 
 
-#### Instructions
+#### Instructions
 
 Using cmake (>= 3.12), from the project's root directory:
   
@@ -22,10 +22,9 @@ An example of use in Pure Data available [here](https://github.com/piptouque/can
 
 #### Dependencies 
 
+* Cantina (submodule)
 * pure-data 0.52 (submodule)
 * pd.build       (submodule)
-* SoundTouch  2.1.2
-* FFTW3
 
 *On Debian:*
 
