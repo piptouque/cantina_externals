@@ -22,6 +22,7 @@
       <change afterPath="$PROJECT_DIR$/cantina/modules/cmake/FindSoundTouch.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina" beforeDir="false" afterPath="$PROJECT_DIR$/cantina" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/cantina/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/.gitmodules" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina/cmake_modules/FindFFTW.cmake" beforeDir="false" />
@@ -6436,6 +6437,10 @@
       <change beforePath="$PROJECT_DIR$/cantina/third-party/soundtouch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina/third-party_proxy/fftw-3.3.8/CMakeLists.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina/third-party_proxy/soundtouch/CMakeLists.txt" beforeDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/cantina/third-party_proxy/fftw-3.3.8/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/third-party_proxy/fftw-3.3.8/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/third-party_proxy/soundtouch/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/third-party_proxy/soundtouch/CMakeLists.txt" afterDir="false" />
+>>>>>>> origin/master
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -6529,11 +6534,6 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.cantina_tilde">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -6554,6 +6554,19 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
+=======
+    <configuration name="soundtouch" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cantina_tilde" TARGET_NAME="soundtouch" CONFIG_NAME="Release">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+>>>>>>> origin/master
     <list>
       <item itemvalue="CMake Application.cantina_tilde" />
       <item itemvalue="CMake Application.cantina" />
@@ -6729,7 +6742,12 @@
       <workItem from="1622378158923" duration="1014000" />
       <workItem from="1622382131234" duration="1305000" />
       <workItem from="1622387056380" duration="5484000" />
+<<<<<<< HEAD
       <workItem from="1622397561633" duration="4329000" />
+=======
+      <workItem from="1622397561633" duration="656000" />
+      <workItem from="1622399905881" duration="628000" />
+>>>>>>> origin/master
     </task>
     <task id="LOCAL-00001" summary="Fixed typos and added optimisation flags.&#10;&#10;Not sure if necessary though.">
       <created>1599826362691</created>
