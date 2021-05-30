@@ -21,9 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c7d492f9-50fd-4f80-a51d-ee93e33e1bae" name="Default Changelist" comment="[update]: various submodules.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/modules/cmake/SetProjectFlags.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/modules/cmake/SetProjectFlags.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/third-party_proxy/soundtouch/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/third-party_proxy/soundtouch/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/cantina~.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/cantina~.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +47,7 @@
     <option name="SCHEME" value="Project" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/cantina" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -112,9 +111,9 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.cantina_tilde">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="bitcrush_tilde" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$ContentRoot$/patches/test_it/test_bitcrush.pd" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cantina_tilde" TARGET_NAME="bitcrush_tilde" CONFIG_NAME="Release" RUN_PATH="$USER_HOME$/pd-502/bin/pd">
@@ -322,6 +321,7 @@
       <workItem from="1622310148747" duration="11224000" />
       <workItem from="1622362192663" duration="7856000" />
       <workItem from="1622378158923" duration="1014000" />
+      <workItem from="1622382131234" duration="435000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed typos and added optimisation flags.&#10;&#10;Not sure if necessary though.">
       <created>1599826362691</created>
