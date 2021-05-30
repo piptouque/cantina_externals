@@ -365,7 +365,7 @@ extern "C" void cantina_tilde_setup(void) {
                   reinterpret_cast<t_method>(cantina_tilde_controls),
                   gensym("controls"), A_GIMME, 0);
   CLASS_MAINSIGNALIN(cantina_tilde_class, t_cantina_tilde, f);
-  post("Cant version : %s", cant::CANTINA_VERSION);
-  post("Cant brew    : %s", cant::CANTINA_BREW);
+  post("Cant version : " CANTINA_VERSION);
+  post("Cant brew    : " CANTINA_BREW);
   post("~ tut-tut-tut-tut-tulut-tut ~");
 }
