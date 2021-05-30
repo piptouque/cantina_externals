@@ -26,10 +26,6 @@ An example of use in Pure Data available [here](https://github.com/piptouque/can
 * pure-data 0.52 (submodule)
 * pd.build       (submodule)
 
-*On Debian:*
-
-    sudo apt install libsoundtouch-dev libfftw3-dev
-
 ### To do
 
 #### Features 
