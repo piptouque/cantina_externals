@@ -19,36 +19,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7d492f9-50fd-4f80-a51d-ee93e33e1bae" name="Default Changelist" comment="[update]: wow, it compiles.">
+    <list default="true" id="c7d492f9-50fd-4f80-a51d-ee93e33e1bae" name="Default Changelist" comment="[update]: various submodules.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina" beforeDir="false" afterPath="$PROJECT_DIR$/cantina" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/info.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/info.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/pattern/Event.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/pattern/Event.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/pattern/Event.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/pattern/Event.inl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/modules/cmake/SetProjectFlags.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/modules/cmake/SetProjectFlags.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/controller/ControllerUpdate.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/controller/ControllerUpdate.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/controller/MidiController.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/controller/MidiController.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/ADSREnvelope.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/ADSREnvelope.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/ADSRState.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/ADSRState.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/MidiEnvelope.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/MidiEnvelope.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/note/MidiNoteInput.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/note/MidiNoteInput.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/timer/TimerUpdate.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/timer/TimerUpdate.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/inline/cant/pan/envelope/MidiEnvelope.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/inline/cant/pan/envelope/MidiEnvelope.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/Pantoufle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/Pantoufle.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/envelope/ADSREnvelope.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/envelope/ADSREnvelope.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/envelope/ADSRState.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/envelope/ADSRState.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/envelope/MidiEnvelope.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/layer/MidiNoteInputPoly.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/layer/MidiNoteInputPoly.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/note/MidiNoteInput.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/note/MidiNoteInput.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/processor/EnvelopeChain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/processor/EnvelopeChain.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina/third-party_proxy/soundtouch/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/third-party_proxy/soundtouch/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/cantina~.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/cantina~.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +48,7 @@
     <option name="SCHEME" value="Project" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/cantina/pantoufle/cantina_common" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/cantina" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -115,7 +90,7 @@
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="GitIgnore" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cantina/inline/cant/track" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -137,9 +112,9 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.cantina_tilde">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
     <configuration name="bitcrush_tilde" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$ContentRoot$/patches/test_it/test_bitcrush.pd" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cantina_tilde" TARGET_NAME="bitcrush_tilde" CONFIG_NAME="Release" RUN_PATH="$USER_HOME$/pd-502/bin/pd">
@@ -345,7 +320,8 @@
       <workItem from="1622284521737" duration="18219000" />
       <workItem from="1622303455374" duration="6602000" />
       <workItem from="1622310148747" duration="11224000" />
-      <workItem from="1622362192663" duration="7393000" />
+      <workItem from="1622362192663" duration="7856000" />
+      <workItem from="1622378158923" duration="1014000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed typos and added optimisation flags.&#10;&#10;Not sure if necessary though.">
       <created>1599826362691</created>
@@ -466,7 +442,28 @@
       <option name="project" value="LOCAL" />
       <updated>1622311273785</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="[fix]: adsr envelope.">
+      <created>1622370506256</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1622370506256</updated>
+    </task>
+    <task id="LOCAL-00019" summary="[update]: various submodules.">
+      <created>1622370522401</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1622370522401</updated>
+    </task>
+    <task id="LOCAL-00020" summary="[update]: various submodules.">
+      <created>1622370526779</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1622370526779</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -502,7 +499,9 @@
     <MESSAGE value="[update]: everything." />
     <MESSAGE value="[update]: ++everything." />
     <MESSAGE value="[update]: wow, it compiles." />
-    <option name="LAST_COMMIT_MESSAGE" value="[update]: wow, it compiles." />
+    <MESSAGE value="[fix]: adsr envelope." />
+    <MESSAGE value="[update]: various submodules." />
+    <option name="LAST_COMMIT_MESSAGE" value="[update]: various submodules." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
