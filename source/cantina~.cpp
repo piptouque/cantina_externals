@@ -225,11 +225,14 @@ t_int *cantina_tilde_perform(t_int *w) {
     /* resetting samples in outlet before filling it again */
     std::fill(out_harmonics[i], out_harmonics[i] + blockSize, 0.);
   }
+  // seed
+  std::copy(in, in + blockSize, out_seed);
   /** CANT **/
   try {
 
     x->cantina->update();
-    x->cantina->perform(in, out_seed, out_harmonics, blockSize);
+    x->cantina->perform(in, out_harmonics, blockSize);
+
     send_notes_output(x);
   } catch (const cant::CantinaException &e) {
     std::cerr << e.what() << std::endl;
