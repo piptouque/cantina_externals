@@ -61,10 +61,9 @@ add_pd_external(${PROJECT_NAME} cantina~ ${CANTINA_TILDE_FILES})
 # add_pd_external(bitcrush_tilde bitcrush~ ${BITCRUSH_TILDE_FILES})
 
 # no special flags for this one, since it's mess.
-# target_compile_options(${PROJECT_NAME} PUBLIC ${CANTINA_CXX_FLAGS})
+target_compile_options(${PROJECT_NAME} PRIVATE "")# ${CANTINA_CXX_FLAGS})
+target_compile_features(${PROJECT_NAME} PRIVATE ${CANTINA_CXX_STANDARD})
 
-target_compile_features(${PROJECT_NAME} PUBLIC ${CANTINA_CXX_STANDARD})
-
+target_include_directories(${PROJECT_NAME} PUBLIC ${CANTINA_TILDE_INCLUDE_DIR})
 target_link_libraries(${PROJECT_NAME} PUBLIC ${CANTINA_LIBRARIES})
 
-target_include_directories(${PROJECT_NAME} PRIVATE ${CANTINA_TILDE_INCLUDE_DIR})

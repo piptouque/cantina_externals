@@ -16,6 +16,7 @@
 #include <cant/pan/note/note.hpp>
 
 #include <cant/common/CantinaException.hpp>
+#include <cant/common/config.hpp>
 
 /******** declaration ********/
 static t_class *cantina_tilde_class;
@@ -245,35 +246,35 @@ void cantina_tilde_dsp(t_cantina_tilde *x, t_signal **sp) {
 
 void cantina_tilde_envelope(t_cantina_tilde *x, t_symbol *, int argc,
                             t_atom *argv) {
-  /* todo */
+  // todo still
   if (!argv) {
-    post("cantina~: MidiEnvelope method not set.");
+    error("cantina~: MidiEnvelope method not set.");
     return;
   }
   // get envelope type
-  std::string type;
-  type.reserve(20);
-  atom_string(argv + 1, type.data(), 20);
-  if (type == "adsr") {
+  char buf[20];
+  atom_string(argv, buf, 20);
+  std::string type(buf);
+  if (type == cant::ENVELOPE_TYPE_ADSR) {
     if (argc < 2) {
-      post("cantina~: not enough arguments for envelope %s, "
-           "need: damper controller id.",
-           type.data());
+      error("cantina~: not enough arguments for envelope %s, "
+            "need: damper controller id.",
+            type.data());
     }
     // make adsr envelope
     auto adsr = cant::pan::ADSREnvelope::make(x->cantina->getNumberHarmonics());
 
     // make damper
     const auto controllerId =
-        static_cast<cant::pan::id_u8>(atom_getint(argv + 2));
-    const auto channel = static_cast<cant::pan::id_u8>(atom_getint(argv + 3));
+        static_cast<cant::pan::id_u8>(atom_getint(argv + 1));
+    const auto channel = static_cast<cant::pan::id_u8>(atom_getint(argv + 2));
     auto damper = cant::pan::MidiDamper::make(channel, controllerId);
 
     // link the two
     adsr->setController(std::move(damper));
     x->cantina->addEnvelope(std::move(adsr));
   } else {
-    post("cantina~: envelope %s not known.", type.data());
+    error("cantina~: envelope '%s' not known.", type.data());
     return;
   }
 }
@@ -281,8 +282,8 @@ void cantina_tilde_envelope(t_cantina_tilde *x, t_symbol *, int argc,
 void cantina_tilde_notes(t_cantina_tilde *x, t_symbol *, int argc,
                          t_atom *argv) {
   if (argc < 3) {
-    post("cantina~: Wrong format for note input: expected [tone, velocity, "
-         "channel]");
+    error("cantina~: Wrong format for note input: expected [tone, velocity, "
+          "channel]");
     return;
   }
   /* voices of the poly object start at 1 */
@@ -310,8 +311,8 @@ void cantina_tilde_notes(t_cantina_tilde *x, t_symbol *, int argc,
 void cantina_tilde_controls(t_cantina_tilde *x, t_symbol *, int argc,
                             t_atom *argv) {
   if (argc < 3) {
-    post("cantina~: Wrong format for control input: expected [value, "
-         "controller id, channel]");
+    error("cantina~: Wrong format for control input: expected [value, "
+          "controller id, channel]");
     return;
   }
   /*

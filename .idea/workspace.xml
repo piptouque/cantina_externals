@@ -19,42 +19,34 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7d492f9-50fd-4f80-a51d-ee93e33e1bae" name="Default Changelist" comment="[update]: ++everything.">
+    <list default="true" id="c7d492f9-50fd-4f80-a51d-ee93e33e1bae" name="Default Changelist" comment="[update]: wow, it compiles.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina" beforeDir="false" afterPath="$PROJECT_DIR$/cantina" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/include/cant/Cantina.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/include/cant/Cantina.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina/pantoufle" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina/pantoufle/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/config.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/config.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/info.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/common/info.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/pattern/Event.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/include/cant/pattern/Event.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/pattern/Event.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/inline/cant/pattern/Event.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/Pantoufle.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/Pantoufle.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/controller/MidiDamper.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/controller/MidiDamper.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/modules/cmake/SetProjectFlags.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/cantina_common/modules/cmake/SetProjectFlags.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/controller/ControllerUpdate.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/controller/ControllerUpdate.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/controller/MidiController.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/controller/MidiController.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/ADSREnvelope.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/ADSREnvelope.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/ADSRState.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/ADSRState.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/MidiEnvelope.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/MidiEnvelope.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/adsr_forward.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/envelope/adsr_forward.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/processor/ControllerManager.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/processor/ControllerManager.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/processor/EnvelopeChain.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/processor/EnvelopeChain.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/inline/cant/pan/controller/MultiMidiController.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/inline/cant/pan/controller/MultiMidiController.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/inline/cant/pan/envelope/ADSRState.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/inline/cant/pan/envelope/ADSRState.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/note/MidiNoteInput.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/note/MidiNoteInput.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/timer/TimerUpdate.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/include/cant/pan/timer/TimerUpdate.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina/pantoufle/inline/cant/pan/envelope/MidiEnvelope.inl" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/inline/cant/pan/envelope/MidiEnvelope.inl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/Pantoufle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/Pantoufle.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/controller/MidiDamper.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/controller/MidiDamper.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/controller/MidiPan.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/controller/MidiPan.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/controller/MidiWah.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/controller/MidiWah.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/envelope/ADSREnvelope.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/envelope/ADSREnvelope.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/envelope/ADSRState.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/envelope/ADSRState.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/envelope/FlatToneEnvelope.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/envelope/FlatToneEnvelope.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/envelope/MidiEnvelope.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/envelope/MidiEnvelope.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/processor/ControllerManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/processor/ControllerManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/envelope/MidiEnvelope.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/layer/MidiNoteInputPoly.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/layer/MidiNoteInputPoly.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/note/MidiNoteInput.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/note/MidiNoteInput.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/processor/EnvelopeChain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/pantoufle/source/cant/pan/processor/EnvelopeChain.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/source/cant/Cantina.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/source/cant/Cantina.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cantina/third-party_proxy/fftw-3.3.8/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/third-party_proxy/fftw-3.3.8/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cantina/third-party_proxy/soundtouch/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cantina/third-party_proxy/soundtouch/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/cantina~.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/cantina~.cpp" afterDir="false" />
     </list>
@@ -63,7 +55,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Release" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -98,9 +90,6 @@
       <scope name="PantoufleSource" />
       <scope name="CantinaCommonSource" />
     </order>
-  </component>
-  <component name="OCResolveContextSettings">
-    <option name="configuration" value="1-Debug-pantoufle" />
   </component>
   <component name="ProblemsViewState">
     <hideBySeverity>
@@ -148,9 +137,9 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.cantina_tilde">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="bitcrush_tilde" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$ContentRoot$/patches/test_it/test_bitcrush.pd" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cantina_tilde" TARGET_NAME="bitcrush_tilde" CONFIG_NAME="Release" RUN_PATH="$USER_HOME$/pd-502/bin/pd">
@@ -163,7 +152,7 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="cantina_tilde" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$ContentRoot$/patches/Alive.pd" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cantina_tilde" TARGET_NAME="cantina_tilde" CONFIG_NAME="Release" RUN_PATH="$USER_HOME$/pd-502/bin/pd">
+    <configuration name="cantina_tilde" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cantina_tilde" TARGET_NAME="cantina_tilde" CONFIG_NAME="Release" RUN_PATH="$USER_HOME$/pd-502/bin/pd">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -355,7 +344,8 @@
       <workItem from="1619810925570" duration="138000" />
       <workItem from="1622284521737" duration="18219000" />
       <workItem from="1622303455374" duration="6602000" />
-      <workItem from="1622310148747" duration="1081000" />
+      <workItem from="1622310148747" duration="11224000" />
+      <workItem from="1622362192663" duration="7393000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed typos and added optimisation flags.&#10;&#10;Not sure if necessary though.">
       <created>1599826362691</created>
@@ -469,7 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622284958595</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="[update]: wow, it compiles.">
+      <created>1622311273785</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1622311273785</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,7 +501,8 @@
     <MESSAGE value="[Progress]: Added Property template class." />
     <MESSAGE value="[update]: everything." />
     <MESSAGE value="[update]: ++everything." />
-    <option name="LAST_COMMIT_MESSAGE" value="[update]: ++everything." />
+    <MESSAGE value="[update]: wow, it compiles." />
+    <option name="LAST_COMMIT_MESSAGE" value="[update]: wow, it compiles." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
